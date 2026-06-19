@@ -1,0 +1,147 @@
+==== Running small_03 ====
+INFO     planner time limit: 3600s
+INFO     planner memory limit: 8192 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1800s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /usr/bin/python3 /workspace/downward/builds/release/bin/translate/translate.py domain.pddl problem_files/small_03.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.014s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.005s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 167 rules.
+Computing model... [4.730s CPU, 4.730s wall-clock]
+1111206 relevant atoms
+118342 auxiliary atoms
+1229548 final queue length
+2348993 total queue pushes
+Completing instantiation... [26.030s CPU, 26.036s wall-clock]
+Instantiating: [31.120s CPU, 31.113s wall-clock]
+Computing fact groups...
+Finding invariants...
+7 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.070s CPU, 0.074s wall-clock]
+Choosing groups...
+8665 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.010s CPU, 0.013s wall-clock]
+Computing fact groups: [0.120s CPU, 0.126s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.004s wall-clock]
+Building dictionary for full mutex groups... [0.010s CPU, 0.004s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.003s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [13.630s CPU, 13.631s wall-clock]
+Translator axioms removed by simplifying: 81792
+Processing axioms: [17.720s CPU, 17.717s wall-clock]
+Translating task: [36.420s CPU, 36.434s wall-clock]
+865 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+231552 axioms removed
+282 propositions removed
+Detecting unreachable propositions: [1.690s CPU, 1.693s wall-clock]
+Reordering and filtering variables...
+8524 of 8524 variables necessary.
+0 of 0 mutex groups necessary.
+5 of 5 operators necessary.
+770721 of 770721 axiom rules necessary.
+Reordering and filtering variables: [7.700s CPU, 7.701s wall-clock]
+Translator variables: 8524
+Translator derived variables: 6723
+Translator facts: 17048
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 5
+Translator axioms: 770721
+Translator task size: 4393005
+Translator peak memory: 2255504 KB
+Writing output... [3.130s CPU, 3.688s wall-clock]
+Done! [81.200s CPU, 81.791s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1800s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /workspace/downward/builds/release/bin/downward --search 'eager_greedy([hmax(axioms=approximate_negative)])' --internal-plan-file sas_plan < output.sas
+[t=0.012654s, 12116 KB] reading input...
+[t=2.112288s, 251552 KB] done reading input!
+[t=2.271562s, 334840 KB] Simplifying 794295 unary operators... done! [794292 unary operators]
+[t=4.880842s, 386640 KB] time to simplify: 2.609280s
+[t=4.890539s, 386640 KB] Initializing HSP max heuristic...
+[t=4.898816s, 386640 KB] Building successor generator...done!
+[t=4.899156s, 386640 KB] peak memory difference for successor generator creation: 0 KB
+[t=4.899238s, 386640 KB] time for successor generation creation: 0.000000s
+[t=4.899314s, 386640 KB] Variables: 8524
+[t=4.899379s, 386640 KB] FactPairs: 17048
+[t=4.899456s, 386640 KB] Bytes per state: 1068
+[t=4.899535s, 386640 KB] Conducting best first search without reopening closed nodes, (real) bound = 2147483647
+[t=4.908231s, 386640 KB] New best heuristic value for hmax: 7
+[t=4.910184s, 386640 KB] g=0, 1 evaluated, 0 expanded
+[t=4.910267s, 386640 KB] Initial heuristic value for hmax: 7
+[t=4.910348s, 386640 KB] pruning method: none
+[t=4.917293s, 386640 KB] New best heuristic value for hmax: 6
+[t=4.921585s, 386640 KB] g=1, 2 evaluated, 1 expanded
+[t=4.966753s, 386640 KB] New best heuristic value for hmax: 5
+[t=4.967637s, 386640 KB] g=2, 6 evaluated, 2 expanded
+[t=4.976151s, 386640 KB] New best heuristic value for hmax: 4
+[t=4.985135s, 386640 KB] g=3, 7 evaluated, 3 expanded
+[t=5.005595s, 386640 KB] New best heuristic value for hmax: 3
+[t=5.011170s, 386640 KB] g=4, 9 evaluated, 4 expanded
+[t=5.035026s, 386640 KB] New best heuristic value for hmax: 2
+[t=5.037375s, 386640 KB] g=5, 11 evaluated, 5 expanded
+[t=5.054474s, 386640 KB] New best heuristic value for hmax: 1
+[t=5.062198s, 386640 KB] g=6, 13 evaluated, 6 expanded
+[t=5.383880s, 386640 KB] New best heuristic value for hmax: 0
+[t=5.390458s, 386640 KB] g=13, 34 evaluated, 24 expanded
+[t=5.390542s, 386640 KB] Solution found!
+[t=5.393154s, 386640 KB] Actual search time: 0.482730s
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move north (1)
+move north (1)
+move north (1)
+move east (1)
+move east (1)
+move south (1)
+move south (1)
+move south (1)
+[t=5.393239s, 386640 KB] Plan length: 13 step(s).
+[t=5.393239s, 386640 KB] Plan cost: 13
+[t=5.393239s, 386640 KB] Expanded 25 state(s).
+[t=5.393239s, 386640 KB] Reopened 0 state(s).
+[t=5.393239s, 386640 KB] Evaluated 34 state(s).
+[t=5.393239s, 386640 KB] Evaluations: 34
+[t=5.393239s, 386640 KB] Generated 96 state(s).
+[t=5.393239s, 386640 KB] Dead ends: 0 state(s).
+[t=5.393239s, 386640 KB] Number of registered states: 34
+[t=5.393239s, 386640 KB] Int hash set load factor: 34/64 = 0.531250
+[t=5.393239s, 386640 KB] Int hash set resizes: 6
+[t=5.393239s, 386640 KB] Search time: 0.493703s
+[t=5.393239s, 386640 KB] Total time: 5.393239s
+Solution found.
+Peak memory: 386640 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 87.13s
+
+==== Done small_03 ====
+
+Saved plan to problem_outputs/eager_greedy_hmax/small_03_plan

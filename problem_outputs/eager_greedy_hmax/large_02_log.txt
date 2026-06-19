@@ -1,0 +1,188 @@
+==== Running large_02 ====
+INFO     planner time limit: 3600s
+INFO     planner memory limit: 8192 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1800s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /usr/bin/python3 /workspace/downward/builds/release/bin/translate/translate.py domain.pddl problem_files/large_02.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.015s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.005s wall-clock]
+Preparing model... [0.000s CPU, 0.003s wall-clock]
+Generated 167 rules.
+Computing model... [1.410s CPU, 1.421s wall-clock]
+276668 relevant atoms
+105468 auxiliary atoms
+382136 final queue length
+669929 total queue pushes
+Completing instantiation... [10.870s CPU, 10.872s wall-clock]
+Instantiating: [12.390s CPU, 12.399s wall-clock]
+Computing fact groups...
+Finding invariants...
+7 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.020s CPU, 0.020s wall-clock]
+Choosing groups...
+13683 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.020s CPU, 0.022s wall-clock]
+Computing fact groups: [0.100s CPU, 0.107s wall-clock]
+Building STRIPS to SAS dictionary... [0.010s CPU, 0.007s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.007s wall-clock]
+Building mutex information...
+Building mutex information: [0.010s CPU, 0.006s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [3.730s CPU, 3.745s wall-clock]
+Translator axioms removed by simplifying: 92400
+Processing axioms: [4.840s CPU, 4.845s wall-clock]
+Translating task: [8.100s CPU, 8.103s wall-clock]
+1081 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+3600 axioms removed
+334 propositions removed
+Detecting unreachable propositions: [0.450s CPU, 0.449s wall-clock]
+Reordering and filtering variables...
+13516 of 13516 variables necessary.
+0 of 0 mutex groups necessary.
+5 of 5 operators necessary.
+165689 of 165689 axiom rules necessary.
+Reordering and filtering variables: [4.990s CPU, 4.997s wall-clock]
+Translator variables: 13516
+Translator derived variables: 10771
+Translator facts: 27032
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 5
+Translator axioms: 165689
+Translator task size: 1064673
+Translator peak memory: 647868 KB
+Writing output... [0.810s CPU, 0.975s wall-clock]
+Done! [27.110s CPU, 27.316s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1800s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /workspace/downward/builds/release/bin/downward --search 'eager_greedy([hmax(axioms=approximate_negative)])' --internal-plan-file sas_plan < output.sas
+[t=0.010546s, 12116 KB] reading input...
+[t=0.529108s, 72616 KB] done reading input!
+[t=0.568668s, 89620 KB] Simplifying 194315 unary operators... done! [194312 unary operators]
+[t=0.778026s, 104932 KB] time to simplify: 0.209357s
+[t=0.780173s, 104932 KB] Initializing HSP max heuristic...
+[t=0.785781s, 104932 KB] Building successor generator...done!
+[t=0.786182s, 104932 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.786266s, 104932 KB] time for successor generation creation: 0.000000s
+[t=0.786410s, 104932 KB] Variables: 13516
+[t=0.786489s, 104932 KB] FactPairs: 27032
+[t=0.786569s, 104932 KB] Bytes per state: 1692
+[t=0.786646s, 104932 KB] Conducting best first search without reopening closed nodes, (real) bound = 2147483647
+[t=0.786740s, 104932 KB] New best heuristic value for hmax: 11
+[t=0.788545s, 104932 KB] g=0, 1 evaluated, 0 expanded
+[t=0.788630s, 104932 KB] Initial heuristic value for hmax: 11
+[t=0.788709s, 104932 KB] pruning method: none
+[t=0.788784s, 104932 KB] New best heuristic value for hmax: 10
+[t=0.792778s, 104932 KB] g=1, 3 evaluated, 1 expanded
+[t=0.953908s, 104932 KB] New best heuristic value for hmax: 9
+[t=0.962877s, 104932 KB] g=9, 78 evaluated, 50 expanded
+[t=0.963356s, 104932 KB] New best heuristic value for hmax: 8
+[t=0.969654s, 104932 KB] g=10, 82 evaluated, 51 expanded
+[t=1.222828s, 104932 KB] New best heuristic value for hmax: 7
+[t=1.224587s, 104932 KB] g=21, 186 evaluated, 101 expanded
+[t=2.272253s, 104932 KB] New best heuristic value for hmax: 6
+[t=2.280129s, 104932 KB] g=29, 630 evaluated, 344 expanded
+[t=2.281687s, 104932 KB] New best heuristic value for hmax: 5
+[t=2.287912s, 104932 KB] g=30, 634 evaluated, 345 expanded
+[t=2.291233s, 104932 KB] New best heuristic value for hmax: 4
+[t=2.295305s, 104932 KB] g=31, 638 evaluated, 346 expanded
+[t=2.940709s, 104932 KB] New best heuristic value for hmax: 3
+[t=2.948530s, 104932 KB] g=37, 924 evaluated, 464 expanded
+[t=3.020347s, 104932 KB] New best heuristic value for hmax: 2
+[t=3.028050s, 104932 KB] g=44, 962 evaluated, 482 expanded
+[t=3.029832s, 104932 KB] New best heuristic value for hmax: 1
+[t=3.033476s, 104932 KB] g=45, 964 evaluated, 483 expanded
+[t=3.033548s, 104932 KB] New best heuristic value for hmax: 0
+[t=3.037454s, 104932 KB] g=46, 966 evaluated, 484 expanded
+[t=3.038967s, 104932 KB] Solution found!
+[t=3.040596s, 104932 KB] Actual search time: 2.251812s
+move east (1)
+move east (1)
+move south (1)
+move south (1)
+move south (1)
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move north (1)
+move north (1)
+move north (1)
+move north (1)
+move north (1)
+move north (1)
+move west (1)
+move south (1)
+move east (1)
+move south (1)
+move south (1)
+move south (1)
+move south (1)
+move south (1)
+move south (1)
+move east (1)
+move north (1)
+move north (1)
+move north (1)
+move north (1)
+move north (1)
+move west (1)
+move south (1)
+move west (1)
+move north (1)
+move east (1)
+move north (1)
+move north (1)
+move west (1)
+move west (1)
+move south (1)
+move east (1)
+move north (1)
+move east (1)
+move east (1)
+move east (1)
+[t=3.040722s, 104932 KB] Plan length: 46 step(s).
+[t=3.040722s, 104932 KB] Plan cost: 46
+[t=3.040722s, 104932 KB] Expanded 485 state(s).
+[t=3.040722s, 104932 KB] Reopened 0 state(s).
+[t=3.040722s, 104932 KB] Evaluated 967 state(s).
+[t=3.040722s, 104932 KB] Evaluations: 967
+[t=3.040722s, 104932 KB] Generated 1936 state(s).
+[t=3.040722s, 104932 KB] Dead ends: 0 state(s).
+[t=3.040722s, 104932 KB] Number of registered states: 967
+[t=3.040722s, 104932 KB] Int hash set load factor: 967/2048 = 0.472168
+[t=3.040722s, 104932 KB] Int hash set resizes: 11
+[t=3.040722s, 104932 KB] Search time: 2.254075s
+[t=3.040722s, 104932 KB] Total time: 3.040722s
+Solution found.
+Peak memory: 104932 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 30.51s
+
+==== Done large_02 ====
+
+Saved plan to problem_outputs/eager_greedy_hmax/large_02_plan

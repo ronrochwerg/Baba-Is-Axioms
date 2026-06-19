@@ -1,0 +1,121 @@
+==== Running hard_02 ====
+INFO     planner time limit: 3600s
+INFO     planner memory limit: 8192 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1800s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /usr/bin/python3 /workspace/downward/builds/release/bin/translate/translate.py domain.pddl problem_files/hard_02.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.006s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.008s wall-clock]
+Preparing model... [0.000s CPU, 0.003s wall-clock]
+Generated 167 rules.
+Computing model... [4.170s CPU, 4.170s wall-clock]
+583474 relevant atoms
+88518 auxiliary atoms
+671992 final queue length
+1261380 total queue pushes
+Completing instantiation... [23.180s CPU, 23.178s wall-clock]
+Instantiating: [27.640s CPU, 27.651s wall-clock]
+Computing fact groups...
+Finding invariants...
+7 initial candidates
+Finding invariants: [0.010s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.050s CPU, 0.053s wall-clock]
+Choosing groups...
+7466 uncovered facts
+Choosing groups: [0.000s CPU, 0.003s wall-clock]
+Building translation key... [0.020s CPU, 0.022s wall-clock]
+Computing fact groups: [0.140s CPU, 0.134s wall-clock]
+Building STRIPS to SAS dictionary... [0.010s CPU, 0.009s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.007s wall-clock]
+Building mutex information...
+Building mutex information: [0.010s CPU, 0.008s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [8.960s CPU, 8.965s wall-clock]
+Translator axioms removed by simplifying: 42528
+Processing axioms: [13.180s CPU, 13.180s wall-clock]
+Translating task: [29.880s CPU, 29.875s wall-clock]
+737 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+135936 axioms removed
+264 propositions removed
+Detecting unreachable propositions: [1.640s CPU, 1.639s wall-clock]
+Reordering and filtering variables...
+7334 of 7334 variables necessary.
+0 of 0 mutex groups necessary.
+5 of 5 operators necessary.
+385384 of 385384 axiom rules necessary.
+Reordering and filtering variables: [9.300s CPU, 9.303s wall-clock]
+Translator variables: 7334
+Translator derived variables: 5816
+Translator facts: 14668
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 5
+Translator axioms: 385384
+Translator task size: 2113891
+Translator peak memory: 1198272 KB
+Writing output... [2.580s CPU, 2.584s wall-clock]
+Done! [72.210s CPU, 72.226s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1800s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /workspace/downward/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file sas_plan < output.sas
+[t=0.017641s, 12120 KB] reading input...
+[t=1.458426s, 136396 KB] done reading input!
+[t=1.466076s, 136396 KB] Initializing blind search heuristic...
+[t=1.467077s, 136396 KB] Building successor generator...done!
+[t=1.467077s, 136396 KB] peak memory difference for successor generator creation: 0 KB
+[t=1.467077s, 136396 KB] time for successor generation creation: 0.000000s
+[t=1.467077s, 136396 KB] Variables: 7334
+[t=1.467077s, 136396 KB] FactPairs: 14668
+[t=1.467077s, 136396 KB] Bytes per state: 920
+[t=1.467077s, 136396 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=1.467077s, 136396 KB] New best heuristic value for blind: 1
+[t=1.467077s, 136396 KB] g=0, 1 evaluated, 0 expanded
+[t=1.467077s, 136396 KB] f = 1, 1 evaluated, 0 expanded
+[t=1.467077s, 136396 KB] Initial heuristic value for blind: 1
+[t=1.467077s, 136396 KB] pruning method: none
+[t=1.478078s, 136396 KB] f = 2, 5 evaluated, 1 expanded
+[t=1.519077s, 136396 KB] f = 3, 18 evaluated, 5 expanded
+[t=1.654077s, 136396 KB] f = 4, 54 evaluated, 18 expanded
+[t=2.022076s, 136396 KB] f = 5, 142 evaluated, 54 expanded
+[t=2.913057s, 136532 KB] f = 6, 332 evaluated, 142 expanded
+[t=4.821009s, 136936 KB] f = 7, 731 evaluated, 332 expanded
+[t=8.744826s, 137628 KB] f = 8, 1533 evaluated, 731 expanded
+[t=16.463452s, 139132 KB] f = 9, 3085 evaluated, 1533 expanded
+[t=31.029991s, 141968 KB] f = 10, 6100 evaluated, 3085 expanded
+[t=58.839999s, 147348 KB] f = 11, 11864 evaluated, 6100 expanded
+[t=111.260660s, 157752 KB] f = 12, 22809 evaluated, 11864 expanded
+[t=206.877182s, 177024 KB] f = 13, 43148 evaluated, 22809 expanded
+[t=369.422138s, 212512 KB] f = 14, 80425 evaluated, 43148 expanded
+[t=634.457426s, 275692 KB] f = 15, 146933 evaluated, 80425 expanded
+[t=1121.735389s, 386028 KB] f = 16, 262519 evaluated, 146933 expanded
+Peak memory: 526780 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+Remove intermediate file output.sas
+search exit code: 23
+
+Driver aborting after search
+INFO     Planner time: 1872.85s
+
+==== Done hard_02 ====
+
+Planner failed for hard_02 (exit code 23). No plan copied.

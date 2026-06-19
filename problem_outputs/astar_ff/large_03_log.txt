@@ -1,0 +1,157 @@
+==== Running large_03 ====
+INFO     planner time limit: 3600s
+INFO     planner memory limit: 8192 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1800s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /usr/bin/python3 /workspace/downward/builds/release/bin/translate/translate.py domain.pddl problem_files/large_03.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.015s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.005s wall-clock]
+Preparing model... [0.010s CPU, 0.002s wall-clock]
+Generated 167 rules.
+Computing model... [10.090s CPU, 10.105s wall-clock]
+2405958 relevant atoms
+212122 auxiliary atoms
+2618080 final queue length
+5038881 total queue pushes
+Completing instantiation... [57.240s CPU, 57.247s wall-clock]
+Instantiating: [68.060s CPU, 68.088s wall-clock]
+Computing fact groups...
+Finding invariants...
+7 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.180s CPU, 0.181s wall-clock]
+Choosing groups...
+15589 uncovered facts
+Choosing groups: [0.000s CPU, 0.003s wall-clock]
+Building translation key... [0.020s CPU, 0.024s wall-clock]
+Computing fact groups: [0.280s CPU, 0.278s wall-clock]
+Building STRIPS to SAS dictionary... [0.010s CPU, 0.008s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.007s wall-clock]
+Building mutex information...
+Building mutex information: [0.010s CPU, 0.008s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [40.300s CPU, 40.299s wall-clock]
+Translator axioms removed by simplifying: 189760
+Processing axioms: [49.060s CPU, 49.059s wall-clock]
+Translating task: [82.940s CPU, 82.956s wall-clock]
+1241 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+430560 axioms removed
+330 propositions removed
+Detecting unreachable propositions: [3.910s CPU, 3.916s wall-clock]
+Reordering and filtering variables...
+15424 of 15424 variables necessary.
+0 of 0 mutex groups necessary.
+5 of 5 operators necessary.
+1743633 of 1743633 axiom rules necessary.
+Reordering and filtering variables: [29.980s CPU, 29.975s wall-clock]
+Translator variables: 15424
+Translator derived variables: 12235
+Translator facts: 30848
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 5
+Translator axioms: 1743633
+Translator task size: 9932609
+Translator peak memory: 4815716 KB
+Writing output... [7.130s CPU, 8.465s wall-clock]
+Done! [194.510s CPU, 195.908s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1800s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /workspace/downward/builds/release/bin/downward --search 'astar(ff(axioms=approximate_negative))' --internal-plan-file sas_plan < output.sas
+[t=0.010319s, 12116 KB] reading input...
+[t=5.021950s, 553628 KB] done reading input!
+[t=5.381228s, 723044 KB] Simplifying 1783647 unary operators... done! [1783644 unary operators]
+[t=11.520524s, 849616 KB] time to simplify: 6.139295s
+[t=11.560234s, 849616 KB] Initializing additive heuristic...
+[t=11.561895s, 849616 KB] Initializing FF heuristic...
+[t=11.561974s, 849616 KB] Building successor generator...done!
+[t=11.562634s, 849616 KB] peak memory difference for successor generator creation: 0 KB
+[t=11.562726s, 849616 KB] time for successor generation creation: 0.000000s
+[t=11.562802s, 849616 KB] Variables: 15424
+[t=11.562962s, 849616 KB] FactPairs: 30848
+[t=11.563039s, 849616 KB] Bytes per state: 1928
+[t=11.563115s, 849616 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=11.578386s, 849616 KB] New best heuristic value for ff: 1
+[t=11.582651s, 849616 KB] g=0, 1 evaluated, 0 expanded
+[t=11.582742s, 849616 KB] f = 1, 1 evaluated, 0 expanded
+[t=11.582818s, 849616 KB] Initial heuristic value for ff: 1
+[t=11.582900s, 849616 KB] pruning method: none
+[t=11.687025s, 849616 KB] f = 2, 5 evaluated, 1 expanded
+[t=11.756698s, 849616 KB] f = 3, 6 evaluated, 3 expanded
+[t=11.926439s, 849616 KB] f = 4, 10 evaluated, 6 expanded
+[t=12.156183s, 849616 KB] f = 5, 16 evaluated, 10 expanded
+[t=12.505822s, 849616 KB] f = 6, 25 evaluated, 16 expanded
+[t=12.865515s, 849616 KB] f = 7, 33 evaluated, 23 expanded
+[t=13.385192s, 849616 KB] f = 8, 46 evaluated, 33 expanded
+[t=14.014861s, 849616 KB] f = 9, 60 evaluated, 44 expanded
+[t=14.774561s, 849616 KB] f = 10, 77 evaluated, 59 expanded
+[t=15.564243s, 849616 KB] f = 11, 95 evaluated, 75 expanded
+[t=16.603918s, 849616 KB] f = 12, 117 evaluated, 94 expanded
+[t=17.683511s, 849616 KB] f = 13, 140 evaluated, 116 expanded
+[t=18.943188s, 849616 KB] f = 14, 167 evaluated, 141 expanded
+[t=20.042871s, 849616 KB] f = 15, 190 evaluated, 165 expanded
+[t=20.212531s, 849616 KB] New best heuristic value for ff: 0
+[t=20.214187s, 849616 KB] g=15, 194 evaluated, 169 expanded
+[t=20.214230s, 849616 KB] Solution found!
+[t=20.221300s, 849616 KB] Actual search time: 8.638323s
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move north (1)
+move north (1)
+move north (1)
+move east (1)
+move east (1)
+move south (1)
+move south (1)
+move south (1)
+[t=20.221357s, 849616 KB] Plan length: 15 step(s).
+[t=20.221357s, 849616 KB] Plan cost: 15
+[t=20.221357s, 849616 KB] Expanded 170 state(s).
+[t=20.221357s, 849616 KB] Reopened 0 state(s).
+[t=20.221357s, 849616 KB] Evaluated 194 state(s).
+[t=20.221357s, 849616 KB] Evaluations: 194
+[t=20.221357s, 849616 KB] Generated 676 state(s).
+[t=20.221357s, 849616 KB] Dead ends: 0 state(s).
+[t=20.221357s, 849616 KB] Expanded until last jump: 165 state(s).
+[t=20.221357s, 849616 KB] Reopened until last jump: 0 state(s).
+[t=20.221357s, 849616 KB] Evaluated until last jump: 190 state(s).
+[t=20.221357s, 849616 KB] Generated until last jump: 660 state(s).
+[t=20.221357s, 849616 KB] Number of registered states: 194
+[t=20.221357s, 849616 KB] Int hash set load factor: 194/256 = 0.757812
+[t=20.221357s, 849616 KB] Int hash set resizes: 8
+[t=20.221357s, 849616 KB] Search time: 8.658242s
+[t=20.221357s, 849616 KB] Total time: 20.221357s
+Solution found.
+Peak memory: 849616 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 215.63s
+
+==== Done large_03 ====
+
+Saved plan to problem_outputs/astar_ff/large_03_plan

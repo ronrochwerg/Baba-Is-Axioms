@@ -1,0 +1,145 @@
+==== Running large_10 ====
+INFO     planner time limit: 3600s
+INFO     planner memory limit: 8192 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1800s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /usr/bin/python3 /workspace/downward/builds/release/bin/translate/translate.py domain.pddl problem_files/large_10.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.018s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.005s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 167 rules.
+Computing model... [0.750s CPU, 0.748s wall-clock]
+137783 relevant atoms
+70384 auxiliary atoms
+208167 final queue length
+350006 total queue pushes
+Completing instantiation... [4.980s CPU, 4.975s wall-clock]
+Instantiating: [5.780s CPU, 5.781s wall-clock]
+Computing fact groups...
+Finding invariants...
+7 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.010s CPU, 0.010s wall-clock]
+Choosing groups...
+7216 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.010s CPU, 0.012s wall-clock]
+Computing fact groups: [0.050s CPU, 0.053s wall-clock]
+Building STRIPS to SAS dictionary... [0.010s CPU, 0.005s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.003s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.002s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.860s CPU, 0.860s wall-clock]
+Translator axioms removed by simplifying: 10560
+Processing axioms: [1.430s CPU, 1.431s wall-clock]
+Translating task: [3.870s CPU, 3.869s wall-clock]
+521 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+28560 axioms removed
+312 propositions removed
+Detecting unreachable propositions: [0.250s CPU, 0.249s wall-clock]
+Reordering and filtering variables...
+7060 of 7060 variables necessary.
+0 of 0 mutex groups necessary.
+5 of 5 operators necessary.
+85375 of 85375 axiom rules necessary.
+Reordering and filtering variables: [1.620s CPU, 1.620s wall-clock]
+Translator variables: 7060
+Translator derived variables: 5741
+Translator facts: 14120
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 5
+Translator axioms: 85375
+Translator task size: 476621
+Translator peak memory: 323004 KB
+Writing output... [0.370s CPU, 0.499s wall-clock]
+Done! [12.060s CPU, 12.216s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1800s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /workspace/downward/builds/release/bin/downward --search 'lazy_greedy([ff(axioms=approximate_negative)])' --internal-plan-file sas_plan < output.sas
+[t=0.010799s, 12116 KB] reading input...
+[t=0.275254s, 41836 KB] done reading input!
+[t=0.294722s, 51948 KB] Simplifying 99630 unary operators... done! [99627 unary operators]
+[t=0.477125s, 58304 KB] time to simplify: 0.182403s
+[t=0.483894s, 58304 KB] Initializing additive heuristic...
+[t=0.487000s, 58304 KB] Initializing FF heuristic...
+[t=0.487068s, 58304 KB] Building successor generator...done!
+[t=0.487367s, 58304 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.487437s, 58304 KB] time for successor generation creation: 0.000000s
+[t=0.487494s, 58304 KB] Variables: 7060
+[t=0.487568s, 58304 KB] FactPairs: 14120
+[t=0.487615s, 58304 KB] Bytes per state: 884
+[t=0.487654s, 58304 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.487729s, 58304 KB] New best heuristic value for ff: 2
+[t=0.488760s, 58304 KB] g=0, 1 evaluated, 0 expanded
+[t=0.488837s, 58304 KB] Initial heuristic value for ff: 2
+[t=0.521774s, 58304 KB] New best heuristic value for ff: 1
+[t=0.524913s, 58304 KB] g=4, 31 evaluated, 26 expanded
+[t=4.891364s, 58304 KB] Solution found!
+[t=4.896920s, 58304 KB] Actual search time: 4.409191s
+move east (1)
+move east (1)
+move north (1)
+move north (1)
+move east (1)
+move east (1)
+move east (1)
+move east (1)
+move south (1)
+move south (1)
+move east (1)
+move east (1)
+move south (1)
+move east (1)
+move south (1)
+move south (1)
+move south (1)
+move north (1)
+move north (1)
+move north (1)
+move north (1)
+move north (1)
+move north (1)
+[t=4.897004s, 58304 KB] Plan length: 23 step(s).
+[t=4.897004s, 58304 KB] Plan cost: 23
+[t=4.897004s, 58304 KB] Expanded 3590 state(s).
+[t=4.897004s, 58304 KB] Reopened 0 state(s).
+[t=4.897004s, 58304 KB] Evaluated 3777 state(s).
+[t=4.897004s, 58304 KB] Evaluations: 3777
+[t=4.897004s, 58304 KB] Generated 14360 state(s).
+[t=4.897004s, 58304 KB] Dead ends: 186 state(s).
+[t=4.897004s, 58304 KB] Number of registered states: 3777
+[t=4.897004s, 58304 KB] Int hash set load factor: 3777/4096 = 0.922119
+[t=4.897004s, 58304 KB] Int hash set resizes: 12
+[t=4.897004s, 58304 KB] Search time: 4.409350s
+[t=4.897004s, 58304 KB] Total time: 4.897004s
+Solution found.
+Peak memory: 58304 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 17.25s
+
+==== Done large_10 ====
+
+Saved plan to problem_outputs/lazy_greedy_ff/large_10_plan

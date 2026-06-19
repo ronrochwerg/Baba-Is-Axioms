@@ -1,0 +1,132 @@
+==== Running hard_03 ====
+INFO     planner time limit: 3600s
+INFO     planner memory limit: 8192 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1800s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /usr/bin/python3 /workspace/downward/builds/release/bin/translate/translate.py domain.pddl problem_files/hard_03.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.014s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.005s wall-clock]
+Preparing model... [0.010s CPU, 0.002s wall-clock]
+Generated 167 rules.
+Computing model... [1.560s CPU, 1.576s wall-clock]
+362594 relevant atoms
+70313 auxiliary atoms
+432907 final queue length
+799720 total queue pushes
+Completing instantiation... [8.460s CPU, 8.463s wall-clock]
+Instantiating: [10.140s CPU, 10.159s wall-clock]
+Computing fact groups...
+Finding invariants...
+7 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.010s CPU, 0.012s wall-clock]
+Choosing groups...
+6011 uncovered facts
+Choosing groups: [0.010s CPU, 0.012s wall-clock]
+Building translation key... [0.020s CPU, 0.009s wall-clock]
+Computing fact groups: [0.060s CPU, 0.058s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.003s wall-clock]
+Building dictionary for full mutex groups... [0.010s CPU, 0.003s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.002s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [2.390s CPU, 2.404s wall-clock]
+Translator axioms removed by simplifying: 19008
+Processing axioms: [3.790s CPU, 3.789s wall-clock]
+Translating task: [9.610s CPU, 9.627s wall-clock]
+577 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+112896 axioms removed
+264 propositions removed
+Detecting unreachable propositions: [0.540s CPU, 0.540s wall-clock]
+Reordering and filtering variables...
+5879 of 5879 variables necessary.
+0 of 0 mutex groups necessary.
+5 of 5 operators necessary.
+214939 of 214939 axiom rules necessary.
+Reordering and filtering variables: [2.340s CPU, 2.337s wall-clock]
+Translator variables: 5879
+Translator derived variables: 4696
+Translator facts: 11758
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 5
+Translator axioms: 214939
+Translator task size: 1160886
+Translator peak memory: 750128 KB
+Writing output... [0.850s CPU, 1.041s wall-clock]
+Done! [23.860s CPU, 24.079s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1800s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /workspace/downward/builds/release/bin/downward --search 'astar(ff(axioms=approximate_negative))' --internal-plan-file sas_plan < output.sas
+[t=0.010613s, 12116 KB] reading input...
+[t=0.562453s, 79264 KB] done reading input!
+[t=0.611774s, 100440 KB] Simplifying 227298 unary operators... done! [227295 unary operators]
+[t=1.081222s, 115396 KB] time to simplify: 0.469448s
+[t=1.090963s, 115396 KB] Initializing additive heuristic...
+[t=1.098172s, 115396 KB] Initializing FF heuristic...
+[t=1.098259s, 115396 KB] Building successor generator...done!
+[t=1.098598s, 115396 KB] peak memory difference for successor generator creation: 0 KB
+[t=1.098679s, 115396 KB] time for successor generation creation: 0.000000s
+[t=1.098748s, 115396 KB] Variables: 5879
+[t=1.098845s, 115396 KB] FactPairs: 11758
+[t=1.098916s, 115396 KB] Bytes per state: 736
+[t=1.099002s, 115396 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=1.099111s, 115396 KB] New best heuristic value for ff: 3
+[t=1.106467s, 115396 KB] g=0, 1 evaluated, 0 expanded
+[t=1.106577s, 115396 KB] f = 3, 1 evaluated, 0 expanded
+[t=1.106642s, 115396 KB] Initial heuristic value for ff: 3
+[t=1.106722s, 115396 KB] pruning method: none
+[t=1.128063s, 115396 KB] f = 4, 5 evaluated, 1 expanded
+[t=1.177886s, 115396 KB] f = 5, 16 evaluated, 5 expanded
+[t=1.257710s, 115396 KB] f = 6, 34 evaluated, 15 expanded
+[t=1.367420s, 115396 KB] f = 7, 66 evaluated, 30 expanded
+[t=1.477131s, 115396 KB] New best heuristic value for ff: 2
+[t=1.479941s, 115396 KB] g=5, 95 evaluated, 45 expanded
+[t=1.626624s, 115396 KB] f = 8, 136 evaluated, 61 expanded
+[t=2.046318s, 115396 KB] f = 9, 253 evaluated, 118 expanded
+[t=2.945995s, 115396 KB] f = 10, 495 evaluated, 237 expanded
+[t=4.465800s, 115396 KB] f = 11, 909 evaluated, 459 expanded
+[t=6.815519s, 115396 KB] f = 12, 1691 evaluated, 873 expanded
+[t=10.715165s, 115396 KB] f = 13, 2985 evaluated, 1592 expanded
+[t=17.654792s, 115396 KB] f = 14, 5354 evaluated, 2895 expanded
+[t=29.254406s, 115396 KB] f = 15, 9282 evaluated, 5131 expanded
+[t=48.963883s, 115396 KB] f = 16, 15996 evaluated, 8933 expanded
+[t=81.463251s, 119740 KB] f = 17, 26994 evaluated, 15334 expanded
+[t=133.742248s, 133380 KB] f = 18, 44679 evaluated, 25655 expanded
+[t=216.550652s, 155212 KB] f = 19, 72936 evaluated, 42588 expanded
+[t=343.338493s, 187620 KB] f = 20, 115746 evaluated, 68737 expanded
+[t=537.035218s, 237708 KB] f = 21, 180770 evaluated, 109287 expanded
+[t=812.292625s, 308340 KB] f = 22, 271744 evaluated, 168380 expanded
+[t=1210.899149s, 408300 KB] f = 23, 403968 evaluated, 254601 expanded
+[t=1741.423300s, 541520 KB] f = 24, 575284 evaluated, 372565 expanded
+Peak memory: 554080 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+Remove intermediate file output.sas
+search exit code: 23
+
+Driver aborting after search
+INFO     Planner time: 1824.22s
+
+==== Done hard_03 ====
+
+Planner failed for hard_03 (exit code 23). No plan copied.
