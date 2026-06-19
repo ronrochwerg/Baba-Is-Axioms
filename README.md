@@ -3,8 +3,7 @@
 This repository contains the PDDL domain, benchmark problems, level images, and
 planner outputs accompanying a paper submitted to the **ICAPS RPG Workshop
 2026**. The domain models *Baba Is You* as a fully observable deterministic
-planning problem and uses PDDL derived
-predicates (axioms) to represent rules formed by text in each level.
+planning problem with an emphasis on derived predicates.
 
 ## Repository contents
 
