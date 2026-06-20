@@ -152,6 +152,83 @@ def result_cell(result: Result) -> str:
     )
 
 
+def markdown_cell(result: Result | None) -> str:
+    if result is None:
+        return "No log"
+    if result.solved:
+        label = f"[Solved]({result.plan_path})" if result.plan_path else "Solved"
+        length = result.plan_length if result.plan_length is not None else "-"
+        return (
+            f"{label}<br>T {fmt_time(result.translation_seconds)}<br>"
+            f"S {fmt_time(result.search_seconds)}<br>L {length}"
+        )
+    label = f"[{result.failure_phase.title()} failed]({result.log_path})"
+    translation = (
+        f"<br>T {fmt_time(result.translation_seconds)}"
+        if result.failure_phase == "search"
+        else ""
+    )
+    return f"{label}<br>{result.failure_reason}{translation}"
+
+
+def build_markdown(results: list[Result], output: Path) -> None:
+    configurations = sorted({r.configuration for r in results})
+    problems = sorted({r.problem for r in results}, key=problem_key)
+    lookup = {(r.problem, r.configuration): r for r in results}
+
+    lines = [
+        "# Planner benchmark results",
+        "",
+        "Generated from `problem_outputs/`. T = translation wall-clock time, "
+        "S = Fast Downward search time, and L = plan length.",
+        "",
+        f"**{len(problems)} problems | {len(configurations)} configurations | {len(results)} runs**",
+        "",
+        "## Configuration summary",
+        "",
+        "| Configuration | Solved | Median search time | Translation failures | Search failures |",
+        "| --- | ---: | ---: | ---: | ---: |",
+    ]
+    for config in configurations:
+        selected = [r for r in results if r.configuration == config]
+        solved = [r for r in selected if r.solved]
+        search_times = [r.search_seconds for r in solved if r.search_seconds is not None]
+        lines.append(
+            f"| `{config}` | {len(solved)} / {len(selected)} | "
+            f"{fmt_time(statistics.median(search_times) if search_times else None)} | "
+            f"{sum(r.failure_phase == 'translation' for r in selected)} | "
+            f"{sum(r.failure_phase == 'search' for r in selected)} |"
+        )
+
+    for family in ("small", "large", "hard"):
+        family_problems = [p for p in problems if p.startswith(f"{family}_")]
+        if not family_problems:
+            continue
+        lines.extend(
+            [
+                "",
+                f"## {family.title()} problems",
+                "",
+                "| Problem | " + " | ".join(f"`{config}`" for config in configurations) + " |",
+                "| --- | " + " | ".join("---" for _ in configurations) + " |",
+            ]
+        )
+        for problem in family_problems:
+            cells = [markdown_cell(lookup.get((problem, config))) for config in configurations]
+            lines.append(f"| **{problem}** | " + " | ".join(cells) + " |")
+
+    lines.extend(
+        [
+            "",
+            "Times unavailable in a log are shown as `-`. The current log outcome takes "
+            "precedence over leftover plan files from earlier runs.",
+            "",
+            "For filtering and a detailed run table, open `planner_results.html` locally.",
+        ]
+    )
+    output.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def build_html(results: list[Result], output: Path) -> None:
     configurations = sorted({r.configuration for r in results})
     problems = sorted({r.problem for r in results}, key=problem_key)
@@ -231,7 +308,7 @@ thead th {{ position:sticky; top:0; z-index:1; background:#eef2f7 }} tbody th {{
 <div class="controls"><input id="problem" placeholder="Filter problem"><select id="configuration"><option value="">All configurations</option>{config_options}</select><select id="status"><option value="">All outcomes</option><option value="solved">Solved</option><option value="failed">Failed</option></select></div>
 <div class="scroll"><table id="details"><thead><tr><th>Problem</th><th>Configuration</th><th>Outcome</th><th>Translation</th><th>Search</th><th>Plan length</th><th>Files</th></tr></thead><tbody>{''.join(detail_rows)}</tbody></table></div>
 </section>
-<p>Times unavailable in a log are shown as “-”. The current log outcome takes precedence over leftover plan files from earlier runs.</p>
+<p>Times unavailable in a log are shown as "-". The current log outcome takes precedence over leftover plan files from earlier runs.</p>
 </main><script>
 const inputs=[document.querySelector('#problem'),document.querySelector('#configuration'),document.querySelector('#status')];
 function filterRows() {{ const [p,c,s]=inputs.map(x=>x.value.toLowerCase()); document.querySelectorAll('#details tbody tr').forEach(row=>{{ row.hidden=!(row.dataset.problem.includes(p)&&row.dataset.config.includes(c)&&row.dataset.status.includes(s)); }}); }}
@@ -251,6 +328,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--outputs", type=Path, default=Path("problem_outputs"))
     parser.add_argument("--html", type=Path, default=Path("planner_results.html"))
+    parser.add_argument("--markdown", type=Path, default=Path("planner_results.md"))
     parser.add_argument("--csv", type=Path, default=Path("planner_results.csv"))
     args = parser.parse_args()
     root = Path.cwd().resolve()
@@ -260,8 +338,9 @@ def main() -> None:
         parser.error(f"no *_log.txt files found below {args.outputs}")
     results = [parse_result(path, root) for path in logs]
     build_html(results, args.html)
+    build_markdown(results, args.markdown)
     write_csv(results, args.csv)
-    print(f"Wrote {args.html} and {args.csv} from {len(results)} logs.")
+    print(f"Wrote {args.html}, {args.markdown}, and {args.csv} from {len(results)} logs.")
 
 
 if __name__ == "__main__":

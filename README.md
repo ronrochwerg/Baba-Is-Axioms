@@ -61,10 +61,11 @@ and plans produced by the configurations used for the accompanying experiments.
 
 ## Planner results report
 
-Open `planner_results.html` in a browser to view per-problem results, timing,
-failure phases, and plan lengths. The same parsed data is available in
-`planner_results.csv`. After adding or replacing output logs, regenerate both
-files with:
+View the [planner results](planner_results.md) directly on GitHub for
+per-problem outcomes, timing, failure phases, and plan lengths. For an
+interactive, filterable version, open `planner_results.html` locally. The same
+parsed data is available in `planner_results.csv`. After adding or replacing
+output logs, regenerate all three files with:
 
 ```bash
 python planner_report.py
