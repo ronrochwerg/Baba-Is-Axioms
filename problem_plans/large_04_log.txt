@@ -1,0 +1,78 @@
+==== Running large_04 ====
+reading domain.pddl...
+reading problem_files/large_04.pddl...
+reading problem_plans/large_04...
+validating plan "problem_plans/large_04"
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+plan executed successfully
+plan valid!
+metric value: 31
+plan problem_plans/large_04: valid, value: 31 (31 actions, 31 steps)
+distribution of metric values:
+ 31 : 1
+average value: 31
+min value: 31
+
+==== Done large_04 ====
+

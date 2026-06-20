@@ -1,0 +1,78 @@
+==== Running hard_01 ====
+reading domain.pddl...
+reading problem_files/hard_01.pddl...
+reading problem_plans/hard_01...
+validating plan "problem_plans/hard_01"
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+plan executed successfully
+plan valid!
+metric value: 31
+plan problem_plans/hard_01: valid, value: 31 (31 actions, 31 steps)
+distribution of metric values:
+ 31 : 1
+average value: 31
+min value: 31
+
+==== Done hard_01 ====
+

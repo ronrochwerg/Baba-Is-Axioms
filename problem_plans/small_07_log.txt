@@ -1,0 +1,91 @@
+==== Running small_07 ====
+reading domain.pddl...
+reading problem_files/small_07.pddl...
+reading problem_plans/small_07...
+validating plan "problem_plans/small_07"
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE SOUTH))
+plan executed successfully
+error: goal (WON) is false
+plan problem_plans/small_07: not valid, value: - (40 actions, 40 steps)
+
+==== Done small_07 ====
+

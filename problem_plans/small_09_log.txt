@@ -1,0 +1,80 @@
+==== Running small_09 ====
+reading domain.pddl...
+reading problem_files/small_09.pddl...
+reading problem_plans/small_09...
+validating plan "problem_plans/small_09"
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((CONVERT))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+plan executed successfully
+plan valid!
+metric value: 32
+plan problem_plans/small_09: valid, value: 32 (32 actions, 32 steps)
+distribution of metric values:
+ 32 : 1
+average value: 32
+min value: 32
+
+==== Done small_09 ====
+

@@ -1,0 +1,50 @@
+==== Running large_10 ====
+reading domain.pddl...
+reading problem_files/large_10.pddl...
+reading problem_plans/large_10...
+validating plan "problem_plans/large_10"
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+plan executed successfully
+plan valid!
+metric value: 17
+plan problem_plans/large_10: valid, value: 17 (17 actions, 17 steps)
+distribution of metric values:
+ 17 : 1
+average value: 17
+min value: 17
+
+==== Done large_10 ====
+

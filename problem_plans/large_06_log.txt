@@ -1,0 +1,53 @@
+==== Running large_06 ====
+reading domain.pddl...
+reading problem_files/large_06.pddl...
+reading problem_plans/large_06...
+validating plan "problem_plans/large_06"
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+plan executed successfully
+error: goal (WON) is false
+plan problem_plans/large_06: not valid, value: - (21 actions, 21 steps)
+
+==== Done large_06 ====
+

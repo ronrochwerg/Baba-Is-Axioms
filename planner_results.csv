@@ -1,0 +1,277 @@
+problem,configuration,status,failure_phase,failure_reason,translation_seconds,search_seconds,planner_seconds,plan_length,log_path,plan_path
+hard_01,astar_add,failed,search,time limit,13.795,,1814.16,,problem_outputs/astar_add/hard_01_log.txt,
+hard_02,astar_add,failed,search,time limit,72.864,,1873.49,,problem_outputs/astar_add/hard_02_log.txt,
+hard_03,astar_add,solved,,,42.12,443.456718,488.25,52,problem_outputs/astar_add/hard_03_log.txt,problem_outputs/astar_add/hard_03_plan
+large_01,astar_add,solved,,,5.641,0.003001,6.08,12,problem_outputs/astar_add/large_01_log.txt,problem_outputs/astar_add/large_01_plan
+large_02,astar_add,solved,,,49.96,36.665362,88.68,26,problem_outputs/astar_add/large_02_log.txt,problem_outputs/astar_add/large_02_plan
+large_03,astar_add,solved,,,347.289,5.512814,371.28,15,problem_outputs/astar_add/large_03_log.txt,problem_outputs/astar_add/large_03_plan
+large_04,astar_add,solved,,,286.97,76.46668,379.31,31,problem_outputs/astar_add/large_04_log.txt,problem_outputs/astar_add/large_04_plan
+large_05,astar_add,solved,,,308.622,395.830718,720.56,72,problem_outputs/astar_add/large_05_log.txt,problem_outputs/astar_add/large_05_plan
+large_06,astar_add,solved,,,64.984,351.59271,419.9,25,problem_outputs/astar_add/large_06_log.txt,problem_outputs/astar_add/large_06_plan
+large_07,astar_add,failed,search,time limit,249.072,,2050.28,,problem_outputs/astar_add/large_07_log.txt,
+large_08,astar_add,failed,search,time limit,39.111,,1839.6,,problem_outputs/astar_add/large_08_log.txt,
+large_09,astar_add,failed,search,time limit,71.627,,1872.27,,problem_outputs/astar_add/large_09_log.txt,
+large_10,astar_add,solved,,,21.424,8.312754,31.11,17,problem_outputs/astar_add/large_10_log.txt,problem_outputs/astar_add/large_10_plan
+small_01,astar_add,solved,,,2.135,0.001,2.53,10,problem_outputs/astar_add/small_01_log.txt,problem_outputs/astar_add/small_01_plan
+small_02,astar_add,solved,,,18.189,7.91962,27.04,48,problem_outputs/astar_add/small_02_log.txt,problem_outputs/astar_add/small_02_plan
+small_03,astar_add,solved,,,135.297,1.254885,143.55,13,problem_outputs/astar_add/small_03_log.txt,problem_outputs/astar_add/small_03_plan
+small_04,astar_add,solved,,,112.08,5.905572,123.8,25,problem_outputs/astar_add/small_04_log.txt,problem_outputs/astar_add/small_04_plan
+small_05,astar_add,solved,,,91.235,24.864714,121.01,54,problem_outputs/astar_add/small_05_log.txt,problem_outputs/astar_add/small_05_plan
+small_06,astar_add,solved,,,29.455,45.170173,76.24,21,problem_outputs/astar_add/small_06_log.txt,problem_outputs/astar_add/small_06_plan
+small_07,astar_add,failed,search,time limit,114.145,,1914.82,,problem_outputs/astar_add/small_07_log.txt,
+small_08,astar_add,solved,,,22.887,1569.424817,1593.88,29,problem_outputs/astar_add/small_08_log.txt,problem_outputs/astar_add/small_08_plan
+small_09,astar_add,failed,search,time limit,32.314,,1832.79,,problem_outputs/astar_add/small_09_log.txt,
+small_10,astar_add,solved,,,11.379,0.598973,12.93,12,problem_outputs/astar_add/small_10_log.txt,problem_outputs/astar_add/small_10_plan
+hard_01,astar_blind,failed,search,time limit,13.867,,1814.41,,problem_outputs/astar_blind/hard_01_log.txt,
+hard_02,astar_blind,failed,search,time limit,72.226,,1872.85,,problem_outputs/astar_blind/hard_02_log.txt,
+hard_03,astar_blind,failed,search,time limit,42.783,,1843.25,,problem_outputs/astar_blind/hard_03_log.txt,
+large_01,astar_blind,solved,,,5.725,0.005,6.15,12,problem_outputs/astar_blind/large_01_log.txt,problem_outputs/astar_blind/large_01_plan
+large_02,astar_blind,solved,,,48.542,121.379492,171.27,24,problem_outputs/astar_blind/large_02_log.txt,problem_outputs/astar_blind/large_02_plan
+large_03,astar_blind,solved,,,343.666,9.462711,361.59,15,problem_outputs/astar_blind/large_03_log.txt,problem_outputs/astar_blind/large_03_plan
+large_04,astar_blind,solved,,,286.469,77.515423,371.2,31,problem_outputs/astar_blind/large_04_log.txt,problem_outputs/astar_blind/large_04_plan
+large_05,astar_blind,solved,,,309.665,324.110768,641.71,72,problem_outputs/astar_blind/large_05_log.txt,problem_outputs/astar_blind/large_05_plan
+large_06,astar_blind,failed,search,time limit,64.509,,1865.04,,problem_outputs/astar_blind/large_06_log.txt,
+large_07,astar_blind,failed,search,time limit,267.856,,2069.03,,problem_outputs/astar_blind/large_07_log.txt,
+large_08,astar_blind,failed,search,time limit,40.371,,1840.89,,problem_outputs/astar_blind/large_08_log.txt,
+large_09,astar_blind,failed,search,time limit,68.545,,1869.17,,problem_outputs/astar_blind/large_09_log.txt,
+large_10,astar_blind,solved,,,21.526,13.536597,35.93,17,problem_outputs/astar_blind/large_10_log.txt,problem_outputs/astar_blind/large_10_plan
+small_01,astar_blind,solved,,,2.1,0.002,2.49,10,problem_outputs/astar_blind/small_01_log.txt,problem_outputs/astar_blind/small_01_plan
+small_02,astar_blind,solved,,,18.336,33.180123,52.3,22,problem_outputs/astar_blind/small_02_log.txt,problem_outputs/astar_blind/small_02_plan
+small_03,astar_blind,solved,,,135.739,1.144964,140.67,13,problem_outputs/astar_blind/small_03_log.txt,problem_outputs/astar_blind/small_03_plan
+small_04,astar_blind,solved,,,113.54,3.194774,119.98,25,problem_outputs/astar_blind/small_04_log.txt,problem_outputs/astar_blind/small_04_plan
+small_05,astar_blind,solved,,,93.08,15.995574,111.8,54,problem_outputs/astar_blind/small_05_log.txt,problem_outputs/astar_blind/small_05_plan
+small_06,astar_blind,solved,,,30.297,86.972878,118.48,16,problem_outputs/astar_blind/small_06_log.txt,problem_outputs/astar_blind/small_06_plan
+small_07,astar_blind,failed,search,time limit,118.266,,1918.95,,problem_outputs/astar_blind/small_07_log.txt,
+small_08,astar_blind,failed,search,time limit,21.716,,1822.24,,problem_outputs/astar_blind/small_08_log.txt,
+small_09,astar_blind,failed,search,time limit,33.209,,1833.68,,problem_outputs/astar_blind/small_09_log.txt,
+small_10,astar_blind,solved,,,11.208,1.480704,13.36,12,problem_outputs/astar_blind/small_10_log.txt,problem_outputs/astar_blind/small_10_plan
+hard_01,astar_ff,failed,search,time limit,7.762,,1807.93,,problem_outputs/astar_ff/hard_01_log.txt,
+hard_02,astar_ff,failed,search,time limit,40.489,,1840.58,,problem_outputs/astar_ff/hard_02_log.txt,
+hard_03,astar_ff,failed,search,time limit,24.079,,1824.22,,problem_outputs/astar_ff/hard_03_log.txt,
+large_01,astar_ff,solved,,,3.423,0.006531,3.69,12,problem_outputs/astar_ff/large_01_log.txt,problem_outputs/astar_ff/large_01_plan
+large_02,astar_ff,solved,,,27.337,44.152147,72.48,24,problem_outputs/astar_ff/large_02_log.txt,problem_outputs/astar_ff/large_02_plan
+large_03,astar_ff,solved,,,195.908,8.658242,215.63,15,problem_outputs/astar_ff/large_03_log.txt,problem_outputs/astar_ff/large_03_plan
+large_04,astar_ff,solved,,,163.81,68.494458,241.76,31,problem_outputs/astar_ff/large_04_log.txt,problem_outputs/astar_ff/large_04_plan
+large_05,astar_ff,solved,,,179.409,236.102081,425.84,72,problem_outputs/astar_ff/large_05_log.txt,problem_outputs/astar_ff/large_05_plan
+large_06,astar_ff,failed,search,time limit,38.252,,1838.47,,problem_outputs/astar_ff/large_06_log.txt,
+large_07,astar_ff,failed,search,time limit,140.972,,1940.83,,problem_outputs/astar_ff/large_07_log.txt,
+large_08,astar_ff,failed,search,time limit,21.358,,1821.53,,problem_outputs/astar_ff/large_08_log.txt,
+large_09,astar_ff,failed,search,time limit,37.755,,1837.89,,problem_outputs/astar_ff/large_09_log.txt,
+large_10,astar_ff,solved,,,11.969,12.475211,25.05,17,problem_outputs/astar_ff/large_10_log.txt,problem_outputs/astar_ff/large_10_plan
+small_01,astar_ff,solved,,,1.33,0.004537,1.73,10,problem_outputs/astar_ff/small_01_log.txt,problem_outputs/astar_ff/small_01_plan
+small_02,astar_ff,solved,,,11.893,13.461186,25.93,22,problem_outputs/astar_ff/small_02_log.txt,problem_outputs/astar_ff/small_02_plan
+small_03,astar_ff,solved,,,83.824,1.579573,90.36,13,problem_outputs/astar_ff/small_03_log.txt,problem_outputs/astar_ff/small_03_plan
+small_04,astar_ff,solved,,,67.932,4.586562,76.64,25,problem_outputs/astar_ff/small_04_log.txt,problem_outputs/astar_ff/small_04_plan
+small_05,astar_ff,solved,,,55.45,18.055215,76.93,54,problem_outputs/astar_ff/small_05_log.txt,problem_outputs/astar_ff/small_05_plan
+small_06,astar_ff,solved,,,17.888,33.433672,52.32,16,problem_outputs/astar_ff/small_06_log.txt,problem_outputs/astar_ff/small_06_plan
+small_07,astar_ff,failed,search,time limit,68.6,,1868.54,,problem_outputs/astar_ff/small_07_log.txt,
+small_08,astar_ff,failed,search,time limit,12.29,,1812.52,,problem_outputs/astar_ff/small_08_log.txt,
+small_09,astar_ff,failed,search,time limit,17.843,,1818.05,,problem_outputs/astar_ff/small_09_log.txt,
+small_10,astar_ff,solved,,,6.683,1.336745,8.45,12,problem_outputs/astar_ff/small_10_log.txt,problem_outputs/astar_ff/small_10_plan
+hard_01,astar_hmax,failed,search,time limit,13.737,,1814.13,,problem_outputs/astar_hmax/hard_01_log.txt,
+hard_02,astar_hmax,failed,search,time limit,70.974,,1871.51,,problem_outputs/astar_hmax/hard_02_log.txt,
+hard_03,astar_hmax,failed,search,time limit,42.54,,1842.99,,problem_outputs/astar_hmax/hard_03_log.txt,
+large_01,astar_hmax,solved,,,5.74,0.003001,6.18,12,problem_outputs/astar_hmax/large_01_log.txt,problem_outputs/astar_hmax/large_01_plan
+large_02,astar_hmax,solved,,,48.31,8.848527,59.19,24,problem_outputs/astar_hmax/large_02_log.txt,problem_outputs/astar_hmax/large_02_plan
+large_03,astar_hmax,solved,,,341.532,5.876791,365.93,15,problem_outputs/astar_hmax/large_03_log.txt,problem_outputs/astar_hmax/large_03_plan
+large_04,astar_hmax,solved,,,284.328,86.845608,386.66,31,problem_outputs/astar_hmax/large_04_log.txt,problem_outputs/astar_hmax/large_04_plan
+large_05,astar_hmax,solved,,,310.196,483.809068,810.09,72,problem_outputs/astar_hmax/large_05_log.txt,problem_outputs/astar_hmax/large_05_plan
+large_06,astar_hmax,solved,,,64.431,1524.842158,1592.51,19,problem_outputs/astar_hmax/large_06_log.txt,problem_outputs/astar_hmax/large_06_plan
+large_07,astar_hmax,failed,search,time limit,264.821,,2066.08,,problem_outputs/astar_hmax/large_07_log.txt,
+large_08,astar_hmax,failed,search,time limit,40.496,,1841.0,,problem_outputs/astar_hmax/large_08_log.txt,
+large_09,astar_hmax,failed,search,time limit,68.486,,1869.12,,problem_outputs/astar_hmax/large_09_log.txt,
+large_10,astar_hmax,solved,,,21.299,11.353204,34.01,17,problem_outputs/astar_hmax/large_10_log.txt,problem_outputs/astar_hmax/large_10_plan
+small_01,astar_hmax,solved,,,2.118,0.001,2.51,10,problem_outputs/astar_hmax/small_01_log.txt,problem_outputs/astar_hmax/small_01_plan
+small_02,astar_hmax,solved,,,18.508,2.453954,21.91,22,problem_outputs/astar_hmax/small_02_log.txt,problem_outputs/astar_hmax/small_02_plan
+small_03,astar_hmax,solved,,,136.085,1.416971,145.07,13,problem_outputs/astar_hmax/small_03_log.txt,problem_outputs/astar_hmax/small_03_plan
+small_04,astar_hmax,solved,,,113.199,6.945044,126.6,25,problem_outputs/astar_hmax/small_04_log.txt,problem_outputs/astar_hmax/small_04_plan
+small_05,astar_hmax,solved,,,94.991,34.712267,135.21,54,problem_outputs/astar_hmax/small_05_log.txt,problem_outputs/astar_hmax/small_05_plan
+small_06,astar_hmax,solved,,,30.855,46.49235,79.22,16,problem_outputs/astar_hmax/small_06_log.txt,problem_outputs/astar_hmax/small_06_plan
+small_07,astar_hmax,failed,search,time limit,121.187,,1921.94,,problem_outputs/astar_hmax/small_07_log.txt,
+small_08,astar_hmax,solved,,,20.452,1654.321405,1676.07,29,problem_outputs/astar_hmax/small_08_log.txt,problem_outputs/astar_hmax/small_08_plan
+small_09,astar_hmax,failed,search,time limit,32.583,,1833.05,,problem_outputs/astar_hmax/small_09_log.txt,
+small_10,astar_hmax,solved,,,11.198,0.795979,12.93,12,problem_outputs/astar_hmax/small_10_log.txt,problem_outputs/astar_hmax/small_10_plan
+hard_01,eager_greedy_add,failed,search,time limit,13.263,,1813.65,,problem_outputs/eager_greedy_add/hard_01_log.txt,
+hard_02,eager_greedy_add,failed,search,time limit,70.559,,1871.16,,problem_outputs/eager_greedy_add/hard_02_log.txt,
+hard_03,eager_greedy_add,failed,search,time limit,42.239,,1842.74,,problem_outputs/eager_greedy_add/hard_03_log.txt,
+large_01,eager_greedy_add,solved,,,5.645,0.002,6.05,12,problem_outputs/eager_greedy_add/large_01_log.txt,problem_outputs/eager_greedy_add/large_01_plan
+large_02,eager_greedy_add,solved,,,47.69,25.691525,75.39,50,problem_outputs/eager_greedy_add/large_02_log.txt,problem_outputs/eager_greedy_add/large_02_plan
+large_03,eager_greedy_add,solved,,,341.361,2.422899,361.28,15,problem_outputs/eager_greedy_add/large_03_log.txt,problem_outputs/eager_greedy_add/large_03_plan
+large_04,eager_greedy_add,solved,,,297.415,136.868433,452.43,31,problem_outputs/eager_greedy_add/large_04_log.txt,problem_outputs/eager_greedy_add/large_04_plan
+large_05,eager_greedy_add,solved,,,312.146,425.277725,755.67,76,problem_outputs/eager_greedy_add/large_05_log.txt,problem_outputs/eager_greedy_add/large_05_plan
+large_06,eager_greedy_add,failed,search,time limit,68.241,,1868.8,,problem_outputs/eager_greedy_add/large_06_log.txt,
+large_07,eager_greedy_add,failed,search,time limit,258.042,,2059.34,,problem_outputs/eager_greedy_add/large_07_log.txt,
+large_08,eager_greedy_add,failed,search,time limit,38.731,,1839.2,,problem_outputs/eager_greedy_add/large_08_log.txt,
+large_09,eager_greedy_add,failed,search,time limit,67.019,,1867.64,,problem_outputs/eager_greedy_add/large_09_log.txt,
+large_10,eager_greedy_add,solved,,,20.695,2.939947,24.93,18,problem_outputs/eager_greedy_add/large_10_log.txt,problem_outputs/eager_greedy_add/large_10_plan
+small_01,eager_greedy_add,solved,,,2.104,0.002,2.5,10,problem_outputs/eager_greedy_add/small_01_log.txt,problem_outputs/eager_greedy_add/small_01_plan
+small_02,eager_greedy_add,solved,,,18.561,4.411922,23.94,50,problem_outputs/eager_greedy_add/small_02_log.txt,problem_outputs/eager_greedy_add/small_02_plan
+small_03,eager_greedy_add,solved,,,136.981,0.757986,145.22,13,problem_outputs/eager_greedy_add/small_03_log.txt,problem_outputs/eager_greedy_add/small_03_plan
+small_04,eager_greedy_add,solved,,,115.758,9.026599,131.27,25,problem_outputs/eager_greedy_add/small_04_log.txt,problem_outputs/eager_greedy_add/small_04_plan
+small_05,eager_greedy_add,solved,,,95.304,35.447384,136.26,54,problem_outputs/eager_greedy_add/small_05_log.txt,problem_outputs/eager_greedy_add/small_05_plan
+small_06,eager_greedy_add,failed,search,time limit,30.408,,1830.83,,problem_outputs/eager_greedy_add/small_06_log.txt,
+small_07,eager_greedy_add,failed,search,time limit,120.009,,1920.77,,problem_outputs/eager_greedy_add/small_07_log.txt,
+small_08,eager_greedy_add,solved,,,22.529,510.552931,534.58,78,problem_outputs/eager_greedy_add/small_08_log.txt,problem_outputs/eager_greedy_add/small_08_plan
+small_09,eager_greedy_add,failed,search,time limit,31.352,,1831.81,,problem_outputs/eager_greedy_add/small_09_log.txt,
+small_10,eager_greedy_add,solved,,,10.758,0.974982,12.55,16,problem_outputs/eager_greedy_add/small_10_log.txt,problem_outputs/eager_greedy_add/small_10_plan
+hard_01,eager_greedy_blind,failed,search,time limit,7.642,,1807.84,,problem_outputs/eager_greedy_blind/hard_01_log.txt,
+hard_02,eager_greedy_blind,failed,search,time limit,40.887,,1841.08,,problem_outputs/eager_greedy_blind/hard_02_log.txt,
+hard_03,eager_greedy_blind,failed,search,time limit,24.135,,1824.28,,problem_outputs/eager_greedy_blind/hard_03_log.txt,
+large_01,eager_greedy_blind,solved,,,3.549,0.003181,3.81,12,problem_outputs/eager_greedy_blind/large_01_log.txt,problem_outputs/eager_greedy_blind/large_01_plan
+large_02,eager_greedy_blind,solved,,,28.01,66.272267,94.96,24,problem_outputs/eager_greedy_blind/large_02_log.txt,problem_outputs/eager_greedy_blind/large_02_plan
+large_03,eager_greedy_blind,solved,,,198.517,5.931809,208.85,15,problem_outputs/eager_greedy_blind/large_03_log.txt,problem_outputs/eager_greedy_blind/large_03_plan
+large_04,eager_greedy_blind,solved,,,167.383,45.342155,216.7,31,problem_outputs/eager_greedy_blind/large_04_log.txt,problem_outputs/eager_greedy_blind/large_04_plan
+large_05,eager_greedy_blind,solved,,,183.256,147.598073,335.03,72,problem_outputs/eager_greedy_blind/large_05_log.txt,problem_outputs/eager_greedy_blind/large_05_plan
+large_06,eager_greedy_blind,failed,search,time limit,38.189,,1838.46,,problem_outputs/eager_greedy_blind/large_06_log.txt,
+large_07,eager_greedy_blind,failed,search,time limit,139.896,,1939.67,,problem_outputs/eager_greedy_blind/large_07_log.txt,
+large_08,eager_greedy_blind,failed,search,time limit,21.352,,1821.39,,problem_outputs/eager_greedy_blind/large_08_log.txt,
+large_09,eager_greedy_blind,failed,search,time limit,37.492,,1837.67,,problem_outputs/eager_greedy_blind/large_09_log.txt,
+large_10,eager_greedy_blind,solved,,,11.902,7.892937,20.24,17,problem_outputs/eager_greedy_blind/large_10_log.txt,problem_outputs/eager_greedy_blind/large_10_plan
+small_01,eager_greedy_blind,solved,,,1.323,0.00172,1.57,10,problem_outputs/eager_greedy_blind/small_01_log.txt,problem_outputs/eager_greedy_blind/small_01_plan
+small_02,eager_greedy_blind,solved,,,11.459,19.316139,31.26,22,problem_outputs/eager_greedy_blind/small_02_log.txt,problem_outputs/eager_greedy_blind/small_02_plan
+small_03,eager_greedy_blind,solved,,,80.878,1.113749,84.1,13,problem_outputs/eager_greedy_blind/small_03_log.txt,problem_outputs/eager_greedy_blind/small_03_plan
+small_04,eager_greedy_blind,solved,,,67.369,2.804593,71.88,25,problem_outputs/eager_greedy_blind/small_04_log.txt,problem_outputs/eager_greedy_blind/small_04_plan
+small_05,eager_greedy_blind,solved,,,55.397,8.419312,65.15,54,problem_outputs/eager_greedy_blind/small_05_log.txt,problem_outputs/eager_greedy_blind/small_05_plan
+small_06,eager_greedy_blind,solved,,,17.92,50.333126,68.85,16,problem_outputs/eager_greedy_blind/small_06_log.txt,problem_outputs/eager_greedy_blind/small_06_plan
+small_07,eager_greedy_blind,failed,search,time limit,68.579,,1868.56,,problem_outputs/eager_greedy_blind/small_07_log.txt,
+small_08,eager_greedy_blind,failed,search,time limit,12.399,,1812.6,,problem_outputs/eager_greedy_blind/small_08_log.txt,
+small_09,eager_greedy_blind,failed,search,time limit,18.037,,1818.23,,problem_outputs/eager_greedy_blind/small_09_log.txt,
+small_10,eager_greedy_blind,solved,,,6.772,0.940308,8.08,12,problem_outputs/eager_greedy_blind/small_10_log.txt,problem_outputs/eager_greedy_blind/small_10_plan
+hard_01,eager_greedy_ff,failed,search,time limit,13.527,,1813.92,,problem_outputs/eager_greedy_ff/hard_01_log.txt,
+hard_02,eager_greedy_ff,failed,search,time limit,71.644,,1872.23,,problem_outputs/eager_greedy_ff/hard_02_log.txt,
+hard_03,eager_greedy_ff,failed,search,time limit,40.18,,1840.55,,problem_outputs/eager_greedy_ff/hard_03_log.txt,
+large_01,eager_greedy_ff,solved,,,5.69,0.004,6.12,12,problem_outputs/eager_greedy_ff/large_01_log.txt,problem_outputs/eager_greedy_ff/large_01_plan
+large_02,eager_greedy_ff,solved,,,50.334,41.908437,94.42,24,problem_outputs/eager_greedy_ff/large_02_log.txt,problem_outputs/eager_greedy_ff/large_02_plan
+large_03,eager_greedy_ff,solved,,,370.657,12.48452,402.21,15,problem_outputs/eager_greedy_ff/large_03_log.txt,problem_outputs/eager_greedy_ff/large_03_plan
+large_04,eager_greedy_ff,solved,,,306.015,196.515468,520.42,31,problem_outputs/eager_greedy_ff/large_04_log.txt,problem_outputs/eager_greedy_ff/large_04_plan
+large_05,eager_greedy_ff,solved,,,335.828,501.12997,855.28,72,problem_outputs/eager_greedy_ff/large_05_log.txt,problem_outputs/eager_greedy_ff/large_05_plan
+large_06,eager_greedy_ff,failed,search,time limit,71.029,,1871.65,,problem_outputs/eager_greedy_ff/large_06_log.txt,
+large_07,eager_greedy_ff,failed,search,time limit,261.13,,2062.43,,problem_outputs/eager_greedy_ff/large_07_log.txt,
+large_08,eager_greedy_ff,failed,search,time limit,38.425,,1838.89,,problem_outputs/eager_greedy_ff/large_08_log.txt,
+large_09,eager_greedy_ff,failed,search,time limit,66.786,,1867.31,,problem_outputs/eager_greedy_ff/large_09_log.txt,
+large_10,eager_greedy_ff,solved,,,20.954,11.793522,34.09,19,problem_outputs/eager_greedy_ff/large_10_log.txt,problem_outputs/eager_greedy_ff/large_10_plan
+small_01,eager_greedy_ff,solved,,,1.432,0.002066,1.71,10,problem_outputs/eager_greedy_ff/small_01_log.txt,problem_outputs/eager_greedy_ff/small_01_plan
+small_02,eager_greedy_ff,solved,,,12.946,23.864702,37.49,22,problem_outputs/eager_greedy_ff/small_02_log.txt,problem_outputs/eager_greedy_ff/small_02_plan
+small_03,eager_greedy_ff,solved,,,88.396,1.857845,95.52,13,problem_outputs/eager_greedy_ff/small_03_log.txt,problem_outputs/eager_greedy_ff/small_03_plan
+small_04,eager_greedy_ff,solved,,,73.745,5.928978,84.02,25,problem_outputs/eager_greedy_ff/small_04_log.txt,problem_outputs/eager_greedy_ff/small_04_plan
+small_05,eager_greedy_ff,solved,,,95.557,43.052987,144.05,54,problem_outputs/eager_greedy_ff/small_05_log.txt,problem_outputs/eager_greedy_ff/small_05_plan
+small_06,eager_greedy_ff,failed,search,time limit,31.457,,1831.91,,problem_outputs/eager_greedy_ff/small_06_log.txt,
+small_07,eager_greedy_ff,failed,search,time limit,117.578,,1918.35,,problem_outputs/eager_greedy_ff/small_07_log.txt,
+small_08,eager_greedy_ff,solved,,,21.361,1616.657246,1639.46,122,problem_outputs/eager_greedy_ff/small_08_log.txt,problem_outputs/eager_greedy_ff/small_08_plan
+small_09,eager_greedy_ff,failed,search,time limit,30.311,,1830.69,,problem_outputs/eager_greedy_ff/small_09_log.txt,
+small_10,eager_greedy_ff,solved,,,11.222,1.605959,13.76,13,problem_outputs/eager_greedy_ff/small_10_log.txt,problem_outputs/eager_greedy_ff/small_10_plan
+hard_01,eager_greedy_hmax,failed,search,time limit,7.87,,1808.11,,problem_outputs/eager_greedy_hmax/hard_01_log.txt,
+hard_02,eager_greedy_hmax,failed,search,time limit,40.14,,1840.27,,problem_outputs/eager_greedy_hmax/hard_02_log.txt,
+hard_03,eager_greedy_hmax,solved,,,24.048,85.1595,110.51,71,problem_outputs/eager_greedy_hmax/hard_03_log.txt,problem_outputs/eager_greedy_hmax/hard_03_plan
+large_01,eager_greedy_hmax,solved,,,3.431,0.003136,3.68,12,problem_outputs/eager_greedy_hmax/large_01_log.txt,problem_outputs/eager_greedy_hmax/large_01_plan
+large_02,eager_greedy_hmax,solved,,,27.316,2.254075,30.51,46,problem_outputs/eager_greedy_hmax/large_02_log.txt,problem_outputs/eager_greedy_hmax/large_02_plan
+large_03,eager_greedy_hmax,solved,,,194.173,1.466433,206.98,15,problem_outputs/eager_greedy_hmax/large_03_log.txt,problem_outputs/eager_greedy_hmax/large_03_plan
+large_04,eager_greedy_hmax,solved,,,164.427,108.321431,282.16,47,problem_outputs/eager_greedy_hmax/large_04_log.txt,problem_outputs/eager_greedy_hmax/large_04_plan
+large_05,eager_greedy_hmax,solved,,,177.45,196.478196,384.15,72,problem_outputs/eager_greedy_hmax/large_05_log.txt,problem_outputs/eager_greedy_hmax/large_05_plan
+large_06,eager_greedy_hmax,solved,,,38.02,1204.572527,1244.46,49,problem_outputs/eager_greedy_hmax/large_06_log.txt,problem_outputs/eager_greedy_hmax/large_06_plan
+large_07,eager_greedy_hmax,failed,search,time limit,140.597,,1940.14,,problem_outputs/eager_greedy_hmax/large_07_log.txt,
+large_08,eager_greedy_hmax,failed,search,time limit,21.577,,1821.69,,problem_outputs/eager_greedy_hmax/large_08_log.txt,
+large_09,eager_greedy_hmax,failed,search,time limit,37.749,,1837.84,,problem_outputs/eager_greedy_hmax/large_09_log.txt,
+large_10,eager_greedy_hmax,solved,,,11.954,1.308095,13.83,24,problem_outputs/eager_greedy_hmax/large_10_log.txt,problem_outputs/eager_greedy_hmax/large_10_plan
+small_01,eager_greedy_hmax,solved,,,1.415,0.002016,1.69,10,problem_outputs/eager_greedy_hmax/small_01_log.txt,problem_outputs/eager_greedy_hmax/small_01_plan
+small_02,eager_greedy_hmax,solved,,,12.281,1.267368,14.18,52,problem_outputs/eager_greedy_hmax/small_02_log.txt,problem_outputs/eager_greedy_hmax/small_02_plan
+small_03,eager_greedy_hmax,solved,,,81.791,0.493703,87.13,13,problem_outputs/eager_greedy_hmax/small_03_log.txt,problem_outputs/eager_greedy_hmax/small_03_plan
+small_04,eager_greedy_hmax,solved,,,67.674,4.836074,76.73,37,problem_outputs/eager_greedy_hmax/small_04_log.txt,problem_outputs/eager_greedy_hmax/small_04_plan
+small_05,eager_greedy_hmax,solved,,,55.677,15.665611,74.68,54,problem_outputs/eager_greedy_hmax/small_05_log.txt,problem_outputs/eager_greedy_hmax/small_05_plan
+small_06,eager_greedy_hmax,failed,search,time limit,17.906,,1817.96,,problem_outputs/eager_greedy_hmax/small_06_log.txt,
+small_07,eager_greedy_hmax,failed,search,time limit,68.221,,1868.21,,problem_outputs/eager_greedy_hmax/small_07_log.txt,
+small_08,eager_greedy_hmax,failed,search,time limit,12.552,,1812.62,,problem_outputs/eager_greedy_hmax/small_08_log.txt,
+small_09,eager_greedy_hmax,solved,,,17.767,124.183858,142.85,58,problem_outputs/eager_greedy_hmax/small_09_log.txt,problem_outputs/eager_greedy_hmax/small_09_plan
+small_10,eager_greedy_hmax,solved,,,6.513,4.826719,11.78,18,problem_outputs/eager_greedy_hmax/small_10_log.txt,problem_outputs/eager_greedy_hmax/small_10_plan
+hard_01,lazy_greedy_add,failed,search,time limit,8.718,,1808.96,,problem_outputs/lazy_greedy_add/hard_01_log.txt,
+hard_02,lazy_greedy_add,failed,search,time limit,45.392,,1845.54,,problem_outputs/lazy_greedy_add/hard_02_log.txt,
+hard_03,lazy_greedy_add,failed,search,time limit,27.457,,1827.65,,problem_outputs/lazy_greedy_add/hard_03_log.txt,
+large_01,lazy_greedy_add,solved,,,3.474,0.002087,3.73,12,problem_outputs/lazy_greedy_add/large_01_log.txt,problem_outputs/lazy_greedy_add/large_01_plan
+large_02,lazy_greedy_add,solved,,,27.885,11.171788,40.1,58,problem_outputs/lazy_greedy_add/large_02_log.txt,problem_outputs/lazy_greedy_add/large_02_plan
+large_03,lazy_greedy_add,solved,,,200.683,1.321067,213.4,15,problem_outputs/lazy_greedy_add/large_03_log.txt,problem_outputs/lazy_greedy_add/large_03_plan
+large_04,lazy_greedy_add,solved,,,167.604,62.175762,239.88,31,problem_outputs/lazy_greedy_add/large_04_log.txt,problem_outputs/lazy_greedy_add/large_04_plan
+large_05,lazy_greedy_add,solved,,,182.657,198.561707,391.41,76,problem_outputs/lazy_greedy_add/large_05_log.txt,problem_outputs/lazy_greedy_add/large_05_plan
+large_06,lazy_greedy_add,failed,search,time limit,38.523,,1838.56,,problem_outputs/lazy_greedy_add/large_06_log.txt,
+large_07,lazy_greedy_add,failed,search,time limit,142.86,,1942.64,,problem_outputs/lazy_greedy_add/large_07_log.txt,
+large_08,lazy_greedy_add,failed,search,time limit,21.459,,1821.63,,problem_outputs/lazy_greedy_add/large_08_log.txt,
+large_09,lazy_greedy_add,failed,search,time limit,38.438,,1838.55,,problem_outputs/lazy_greedy_add/large_09_log.txt,
+large_10,lazy_greedy_add,solved,,,11.618,1.048807,13.27,18,problem_outputs/lazy_greedy_add/large_10_log.txt,problem_outputs/lazy_greedy_add/large_10_plan
+small_01,lazy_greedy_add,solved,,,1.488,0.001466,1.77,10,problem_outputs/lazy_greedy_add/small_01_log.txt,problem_outputs/lazy_greedy_add/small_01_plan
+small_02,lazy_greedy_add,solved,,,12.869,3.716564,17.25,62,problem_outputs/lazy_greedy_add/small_02_log.txt,problem_outputs/lazy_greedy_add/small_02_plan
+small_03,lazy_greedy_add,solved,,,88.574,0.525812,94.47,13,problem_outputs/lazy_greedy_add/small_03_log.txt,problem_outputs/lazy_greedy_add/small_03_plan
+small_04,lazy_greedy_add,solved,,,75.957,6.103955,86.47,25,problem_outputs/lazy_greedy_add/small_04_log.txt,problem_outputs/lazy_greedy_add/small_04_plan
+small_05,lazy_greedy_add,solved,,,60.982,20.648748,85.47,54,problem_outputs/lazy_greedy_add/small_05_log.txt,problem_outputs/lazy_greedy_add/small_05_plan
+small_06,lazy_greedy_add,failed,search,time limit,20.083,,1820.26,,problem_outputs/lazy_greedy_add/small_06_log.txt,
+small_07,lazy_greedy_add,failed,search,time limit,75.404,,1875.39,,problem_outputs/lazy_greedy_add/small_07_log.txt,
+small_08,lazy_greedy_add,solved,,,14.606,203.973072,219.44,82,problem_outputs/lazy_greedy_add/small_08_log.txt,problem_outputs/lazy_greedy_add/small_08_plan
+small_09,lazy_greedy_add,failed,search,time limit,20.149,,1820.31,,problem_outputs/lazy_greedy_add/small_09_log.txt,
+small_10,lazy_greedy_add,solved,,,7.443,0.653886,8.65,16,problem_outputs/lazy_greedy_add/small_10_log.txt,problem_outputs/lazy_greedy_add/small_10_plan
+hard_01,lazy_greedy_blind,failed,search,time limit,7.373,,1807.6,,problem_outputs/lazy_greedy_blind/hard_01_log.txt,
+hard_02,lazy_greedy_blind,failed,search,time limit,40.197,,1840.4,,problem_outputs/lazy_greedy_blind/hard_02_log.txt,
+hard_03,lazy_greedy_blind,failed,search,time limit,24.04,,1824.13,,problem_outputs/lazy_greedy_blind/hard_03_log.txt,
+large_01,lazy_greedy_blind,solved,,,3.293,0.003281,3.55,12,problem_outputs/lazy_greedy_blind/large_01_log.txt,problem_outputs/lazy_greedy_blind/large_01_plan
+large_02,lazy_greedy_blind,solved,,,27.159,67.564459,95.42,24,problem_outputs/lazy_greedy_blind/large_02_log.txt,problem_outputs/lazy_greedy_blind/large_02_plan
+large_03,lazy_greedy_blind,solved,,,195.422,5.6123,205.3,15,problem_outputs/lazy_greedy_blind/large_03_log.txt,problem_outputs/lazy_greedy_blind/large_03_plan
+large_04,lazy_greedy_blind,solved,,,164.146,41.053449,208.63,31,problem_outputs/lazy_greedy_blind/large_04_log.txt,problem_outputs/lazy_greedy_blind/large_04_plan
+large_05,lazy_greedy_blind,solved,,,178.92,134.968288,317.78,72,problem_outputs/lazy_greedy_blind/large_05_log.txt,problem_outputs/lazy_greedy_blind/large_05_plan
+large_06,lazy_greedy_blind,failed,search,time limit,38.025,,1838.09,,problem_outputs/lazy_greedy_blind/large_06_log.txt,
+large_07,lazy_greedy_blind,failed,search,time limit,140.432,,1940.47,,problem_outputs/lazy_greedy_blind/large_07_log.txt,
+large_08,lazy_greedy_blind,failed,search,time limit,21.195,,1821.36,,problem_outputs/lazy_greedy_blind/large_08_log.txt,
+large_09,lazy_greedy_blind,failed,search,time limit,37.718,,1837.83,,problem_outputs/lazy_greedy_blind/large_09_log.txt,
+large_10,lazy_greedy_blind,solved,,,11.73,7.952783,20.11,17,problem_outputs/lazy_greedy_blind/large_10_log.txt,problem_outputs/lazy_greedy_blind/large_10_plan
+small_01,lazy_greedy_blind,solved,,,1.276,0.001579,1.54,10,problem_outputs/lazy_greedy_blind/small_01_log.txt,problem_outputs/lazy_greedy_blind/small_01_plan
+small_02,lazy_greedy_blind,solved,,,11.011,20.099844,31.56,22,problem_outputs/lazy_greedy_blind/small_02_log.txt,problem_outputs/lazy_greedy_blind/small_02_plan
+small_03,lazy_greedy_blind,solved,,,81.055,0.941884,84.02,13,problem_outputs/lazy_greedy_blind/small_03_log.txt,problem_outputs/lazy_greedy_blind/small_03_plan
+small_04,lazy_greedy_blind,solved,,,67.542,2.367385,71.6,25,problem_outputs/lazy_greedy_blind/small_04_log.txt,problem_outputs/lazy_greedy_blind/small_04_plan
+small_05,lazy_greedy_blind,solved,,,55.659,8.477365,65.5,54,problem_outputs/lazy_greedy_blind/small_05_log.txt,problem_outputs/lazy_greedy_blind/small_05_plan
+small_06,lazy_greedy_blind,solved,,,17.714,51.037414,69.38,16,problem_outputs/lazy_greedy_blind/small_06_log.txt,problem_outputs/lazy_greedy_blind/small_06_plan
+small_07,lazy_greedy_blind,failed,search,time limit,68.181,,1868.21,,problem_outputs/lazy_greedy_blind/small_07_log.txt,
+small_08,lazy_greedy_blind,failed,search,time limit,11.986,,1812.27,,problem_outputs/lazy_greedy_blind/small_08_log.txt,
+small_09,lazy_greedy_blind,failed,search,time limit,17.665,,1817.9,,problem_outputs/lazy_greedy_blind/small_09_log.txt,
+small_10,lazy_greedy_blind,solved,,,6.33,0.95349,7.66,12,problem_outputs/lazy_greedy_blind/small_10_log.txt,problem_outputs/lazy_greedy_blind/small_10_plan
+hard_01,lazy_greedy_ff,failed,search,time limit,7.812,,1807.99,,problem_outputs/lazy_greedy_ff/hard_01_log.txt,
+hard_02,lazy_greedy_ff,failed,search,time limit,41.413,,1841.4,,problem_outputs/lazy_greedy_ff/hard_02_log.txt,
+hard_03,lazy_greedy_ff,failed,search,time limit,24.817,,1824.99,,problem_outputs/lazy_greedy_ff/hard_03_log.txt,
+large_01,lazy_greedy_ff,solved,,,3.564,0.003088,3.82,12,problem_outputs/lazy_greedy_ff/large_01_log.txt,problem_outputs/lazy_greedy_ff/large_01_plan
+large_02,lazy_greedy_ff,solved,,,28.202,13.872997,43.19,26,problem_outputs/lazy_greedy_ff/large_02_log.txt,problem_outputs/lazy_greedy_ff/large_02_plan
+large_03,lazy_greedy_ff,solved,,,199.985,6.850827,218.2,15,problem_outputs/lazy_greedy_ff/large_03_log.txt,problem_outputs/lazy_greedy_ff/large_03_plan
+large_04,lazy_greedy_ff,solved,,,168.048,84.325125,262.11,31,problem_outputs/lazy_greedy_ff/large_04_log.txt,problem_outputs/lazy_greedy_ff/large_04_plan
+large_05,lazy_greedy_ff,solved,,,183.467,245.387859,439.37,72,problem_outputs/lazy_greedy_ff/large_05_log.txt,problem_outputs/lazy_greedy_ff/large_05_plan
+large_06,lazy_greedy_ff,failed,search,time limit,39.325,,1839.29,,problem_outputs/lazy_greedy_ff/large_06_log.txt,
+large_07,lazy_greedy_ff,failed,search,time limit,144.693,,1944.42,,problem_outputs/lazy_greedy_ff/large_07_log.txt,
+large_08,lazy_greedy_ff,failed,search,time limit,22.104,,1822.34,,problem_outputs/lazy_greedy_ff/large_08_log.txt,
+large_09,lazy_greedy_ff,failed,search,time limit,38.592,,1838.56,,problem_outputs/lazy_greedy_ff/large_09_log.txt,
+large_10,lazy_greedy_ff,solved,,,12.216,4.40935,17.25,23,problem_outputs/lazy_greedy_ff/large_10_log.txt,problem_outputs/lazy_greedy_ff/large_10_plan
+small_01,lazy_greedy_ff,solved,,,1.37,0.002082,1.63,10,problem_outputs/lazy_greedy_ff/small_01_log.txt,problem_outputs/lazy_greedy_ff/small_01_plan
+small_02,lazy_greedy_ff,solved,,,11.792,21.617888,33.97,22,problem_outputs/lazy_greedy_ff/small_02_log.txt,problem_outputs/lazy_greedy_ff/small_02_plan
+small_03,lazy_greedy_ff,solved,,,83.614,1.69468,90.37,13,problem_outputs/lazy_greedy_ff/small_03_log.txt,problem_outputs/lazy_greedy_ff/small_03_plan
+small_04,lazy_greedy_ff,solved,,,69.457,5.230732,78.82,25,problem_outputs/lazy_greedy_ff/small_04_log.txt,problem_outputs/lazy_greedy_ff/small_04_plan
+small_05,lazy_greedy_ff,solved,,,56.883,19.361774,79.75,54,problem_outputs/lazy_greedy_ff/small_05_log.txt,problem_outputs/lazy_greedy_ff/small_05_plan
+small_06,lazy_greedy_ff,failed,search,time limit,18.536,,1818.63,,problem_outputs/lazy_greedy_ff/small_06_log.txt,
+small_07,lazy_greedy_ff,failed,search,time limit,70.197,,1870.27,,problem_outputs/lazy_greedy_ff/small_07_log.txt,
+small_08,lazy_greedy_ff,solved,,,12.817,591.167681,604.69,137,problem_outputs/lazy_greedy_ff/small_08_log.txt,problem_outputs/lazy_greedy_ff/small_08_plan
+small_09,lazy_greedy_ff,solved,,,18.233,1199.043192,1218.26,57,problem_outputs/lazy_greedy_ff/small_09_log.txt,problem_outputs/lazy_greedy_ff/small_09_plan
+small_10,lazy_greedy_ff,solved,,,6.704,0.895626,8.08,13,problem_outputs/lazy_greedy_ff/small_10_log.txt,problem_outputs/lazy_greedy_ff/small_10_plan
+hard_01,lazy_greedy_hmax,failed,search,time limit,7.563,,1807.76,,problem_outputs/lazy_greedy_hmax/hard_01_log.txt,
+hard_02,lazy_greedy_hmax,failed,search,time limit,41.267,,1841.5,,problem_outputs/lazy_greedy_hmax/hard_02_log.txt,
+hard_03,lazy_greedy_hmax,solved,,,23.994,109.044165,134.3,75,problem_outputs/lazy_greedy_hmax/hard_03_log.txt,problem_outputs/lazy_greedy_hmax/hard_03_plan
+large_01,lazy_greedy_hmax,solved,,,3.487,0.002098,3.73,12,problem_outputs/lazy_greedy_hmax/large_01_log.txt,problem_outputs/lazy_greedy_hmax/large_01_plan
+large_02,lazy_greedy_hmax,solved,,,27.41,1.688625,30.07,50,problem_outputs/lazy_greedy_hmax/large_02_log.txt,problem_outputs/lazy_greedy_hmax/large_02_plan
+large_03,lazy_greedy_hmax,solved,,,194.098,1.211566,206.53,15,problem_outputs/lazy_greedy_hmax/large_03_log.txt,problem_outputs/lazy_greedy_hmax/large_03_plan
+large_04,lazy_greedy_hmax,solved,,,164.197,108.237084,281.77,47,problem_outputs/lazy_greedy_hmax/large_04_log.txt,problem_outputs/lazy_greedy_hmax/large_04_plan
+large_05,lazy_greedy_hmax,solved,,,178.82,196.079435,385.08,92,problem_outputs/lazy_greedy_hmax/large_05_log.txt,problem_outputs/lazy_greedy_hmax/large_05_plan
+large_06,lazy_greedy_hmax,failed,search,time limit,37.87,,1838.01,,problem_outputs/lazy_greedy_hmax/large_06_log.txt,
+large_07,lazy_greedy_hmax,failed,search,time limit,145.128,,1944.99,,problem_outputs/lazy_greedy_hmax/large_07_log.txt,
+large_08,lazy_greedy_hmax,failed,search,time limit,21.38,,1821.5,,problem_outputs/lazy_greedy_hmax/large_08_log.txt,
+large_09,lazy_greedy_hmax,failed,search,time limit,37.636,,1837.74,,problem_outputs/lazy_greedy_hmax/large_09_log.txt,
+large_10,lazy_greedy_hmax,solved,,,12.022,1.269488,13.88,24,problem_outputs/lazy_greedy_hmax/large_10_log.txt,problem_outputs/lazy_greedy_hmax/large_10_plan
+small_01,lazy_greedy_hmax,solved,,,1.29,0.001106,1.54,10,problem_outputs/lazy_greedy_hmax/small_01_log.txt,problem_outputs/lazy_greedy_hmax/small_01_plan
+small_02,lazy_greedy_hmax,solved,,,11.5,0.918516,12.92,52,problem_outputs/lazy_greedy_hmax/small_02_log.txt,problem_outputs/lazy_greedy_hmax/small_02_plan
+small_03,lazy_greedy_hmax,solved,,,82.453,0.438745,87.63,13,problem_outputs/lazy_greedy_hmax/small_03_log.txt,problem_outputs/lazy_greedy_hmax/small_03_plan
+small_04,lazy_greedy_hmax,solved,,,67.531,4.713556,76.25,37,problem_outputs/lazy_greedy_hmax/small_04_log.txt,problem_outputs/lazy_greedy_hmax/small_04_plan
+small_05,lazy_greedy_hmax,solved,,,55.042,15.505395,73.89,54,problem_outputs/lazy_greedy_hmax/small_05_log.txt,problem_outputs/lazy_greedy_hmax/small_05_plan
+small_06,lazy_greedy_hmax,failed,search,time limit,18.022,,1818.13,,problem_outputs/lazy_greedy_hmax/small_06_log.txt,
+small_07,lazy_greedy_hmax,failed,search,time limit,68.144,,1868.02,,problem_outputs/lazy_greedy_hmax/small_07_log.txt,
+small_08,lazy_greedy_hmax,failed,search,time limit,12.245,,1812.48,,problem_outputs/lazy_greedy_hmax/small_08_log.txt,
+small_09,lazy_greedy_hmax,solved,,,17.608,641.375913,659.93,58,problem_outputs/lazy_greedy_hmax/small_09_log.txt,problem_outputs/lazy_greedy_hmax/small_09_plan
+small_10,lazy_greedy_hmax,solved,,,6.57,4.871436,11.87,18,problem_outputs/lazy_greedy_hmax/small_10_log.txt,problem_outputs/lazy_greedy_hmax/small_10_plan

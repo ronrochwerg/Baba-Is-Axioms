@@ -1,0 +1,64 @@
+==== Running small_02 ====
+reading domain.pddl...
+reading problem_files/small_02.pddl...
+reading problem_plans/small_02...
+validating plan "problem_plans/small_02"
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE SOUTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE WEST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE NORTH))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+next happening:
+((MOVE EAST))
+plan executed successfully
+plan valid!
+metric value: 24
+plan problem_plans/small_02: valid, value: 24 (24 actions, 24 steps)
+distribution of metric values:
+ 24 : 1
+average value: 24
+min value: 24
+
+==== Done small_02 ====
+
