@@ -159,7 +159,7 @@ def markdown_cell(result: Result | None) -> str:
         label = f"[Solved]({result.plan_path})" if result.plan_path else "Solved"
         length = result.plan_length if result.plan_length is not None else "-"
         return (
-            f"{label}<br>T {fmt_time(result.translation_seconds)}<br>"
+            f":green_circle: {label}<br>T {fmt_time(result.translation_seconds)}<br>"
             f"S {fmt_time(result.search_seconds)}<br>L {length}"
         )
     label = f"[{result.failure_phase.title()} failed]({result.log_path})"
@@ -168,7 +168,7 @@ def markdown_cell(result: Result | None) -> str:
         if result.failure_phase == "search"
         else ""
     )
-    return f"{label}<br>{result.failure_reason}{translation}"
+    return f":red_circle: {label}<br>{result.failure_reason}{translation}"
 
 
 def build_markdown(results: list[Result], output: Path) -> None:
