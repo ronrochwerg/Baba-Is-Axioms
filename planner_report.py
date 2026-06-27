@@ -186,7 +186,7 @@ def build_markdown(results: list[Result], output: Path) -> None:
         "",
         "## Configuration summary",
         "",
-        "| Configuration | Solved | Median search time | Translation failures | Search failures |",
+        "| Configuration | Solved | Mean search time | Translation failures | Search failures |",
         "| --- | ---: | ---: | ---: | ---: |",
     ]
     for config in configurations:
@@ -195,7 +195,7 @@ def build_markdown(results: list[Result], output: Path) -> None:
         search_times = [r.search_seconds for r in solved if r.search_seconds is not None]
         lines.append(
             f"| `{config}` | {len(solved)} / {len(selected)} | "
-            f"{fmt_time(statistics.median(search_times) if search_times else None)} | "
+            f"{fmt_time(statistics.mean(search_times) if search_times else None)} | "
             f"{sum(r.failure_phase == 'translation' for r in selected)} | "
             f"{sum(r.failure_phase == 'search' for r in selected)} |"
         )
@@ -220,8 +220,8 @@ def build_markdown(results: list[Result], output: Path) -> None:
     lines.extend(
         [
             "",
-            "Times unavailable in a log are shown as `-`. The current log outcome takes "
-            "precedence over leftover plan files from earlier runs.",
+            "Times unavailable in a log are shown as `-`. Mean search time only includes "
+            "successful runs.",
             "",
             "For filtering and a detailed run table, open `planner_results.html` locally.",
         ]
@@ -243,7 +243,7 @@ def build_html(results: list[Result], output: Path) -> None:
             "<tr>"
             f"<th>{html.escape(config)}</th>"
             f"<td>{len(solved)} / {len(selected)}</td>"
-            f"<td>{fmt_time(statistics.median(search_times) if search_times else None)}</td>"
+            f"<td>{fmt_time(statistics.mean(search_times) if search_times else None)}</td>"
             f"<td>{sum(r.failure_phase == 'translation' for r in selected)}</td>"
             f"<td>{sum(r.failure_phase == 'search' for r in selected)}</td>"
             "</tr>"
@@ -302,13 +302,13 @@ thead th {{ position:sticky; top:0; z-index:1; background:#eef2f7 }} tbody th {{
 <p>Generated from <code>problem_outputs/</code>. T = translation wall-clock time, S = Fast Downward search time, L = plan length.</p>
 <div class="legend"><span><strong>{len(problems)}</strong> problems</span><span><strong>{len(configurations)}</strong> configurations</span><span><strong>{len(results)}</strong> runs</span></div>
 <h2>Configuration summary</h2>
-<table><thead><tr><th>Configuration</th><th>Solved</th><th>Median search time</th><th>Translation failures</th><th>Search failures</th></tr></thead><tbody>{''.join(summary_rows)}</tbody></table>
+<table><thead><tr><th>Configuration</th><th>Solved</th><th>Mean search time</th><th>Translation failures</th><th>Search failures</th></tr></thead><tbody>{''.join(summary_rows)}</tbody></table>
 {''.join(matrices)}
 <section><h2>All runs</h2>
 <div class="controls"><input id="problem" placeholder="Filter problem"><select id="configuration"><option value="">All configurations</option>{config_options}</select><select id="status"><option value="">All outcomes</option><option value="solved">Solved</option><option value="failed">Failed</option></select></div>
 <div class="scroll"><table id="details"><thead><tr><th>Problem</th><th>Configuration</th><th>Outcome</th><th>Translation</th><th>Search</th><th>Plan length</th><th>Files</th></tr></thead><tbody>{''.join(detail_rows)}</tbody></table></div>
 </section>
-<p>Times unavailable in a log are shown as "-". The current log outcome takes precedence over leftover plan files from earlier runs.</p>
+<p>Times unavailable in a log are shown as "-". Mean search time only includes successful runs.</p>
 </main><script>
 const inputs=[document.querySelector('#problem'),document.querySelector('#configuration'),document.querySelector('#status')];
 function filterRows() {{ const [p,c,s]=inputs.map(x=>x.value.toLowerCase()); document.querySelectorAll('#details tbody tr').forEach(row=>{{ row.hidden=!(row.dataset.problem.includes(p)&&row.dataset.config.includes(c)&&row.dataset.status.includes(s)); }}); }}

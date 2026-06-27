@@ -6,20 +6,20 @@ Generated from `problem_outputs/`. T = translation wall-clock time, S = Fast Dow
 
 ## Configuration summary
 
-| Configuration | Solved | Median search time | Translation failures | Search failures |
+| Configuration | Solved | Mean search time | Translation failures | Search failures |
 | --- | ---: | ---: | ---: | ---: |
-| `astar_add` | 16 / 23 | 16.59s | 0 | 7 |
-| `astar_blind` | 13 / 23 | 13.54s | 0 | 10 |
-| `astar_ff` | 13 / 23 | 12.48s | 0 | 10 |
-| `astar_hmax` | 15 / 23 | 8.849s | 0 | 8 |
-| `eager_greedy_add` | 13 / 23 | 4.412s | 0 | 10 |
-| `eager_greedy_blind` | 13 / 23 | 7.893s | 0 | 10 |
-| `eager_greedy_ff` | 13 / 23 | 12.48s | 0 | 10 |
-| `eager_greedy_hmax` | 15 / 23 | 4.827s | 0 | 8 |
-| `lazy_greedy_add` | 13 / 23 | 3.717s | 0 | 10 |
-| `lazy_greedy_blind` | 13 / 23 | 7.953s | 0 | 10 |
-| `lazy_greedy_ff` | 14 / 23 | 10.36s | 0 | 9 |
-| `lazy_greedy_hmax` | 14 / 23 | 3.201s | 0 | 9 |
+| `astar_add` | 16 / 23 | 185.81s | 0 | 7 |
+| `astar_blind` | 13 / 23 | 52.92s | 0 | 10 |
+| `astar_ff` | 13 / 23 | 34.03s | 0 | 10 |
+| `astar_hmax` | 15 / 23 | 257.91s | 0 | 8 |
+| `eager_greedy_add` | 13 / 23 | 88.80s | 0 | 10 |
+| `eager_greedy_blind` | 13 / 23 | 27.38s | 0 | 10 |
+| `eager_greedy_ff` | 13 / 23 | 188.99s | 0 | 10 |
+| `eager_greedy_hmax` | 15 / 23 | 116.72s | 0 | 8 |
+| `lazy_greedy_add` | 13 / 23 | 39.22s | 0 | 10 |
+| `lazy_greedy_blind` | 13 / 23 | 26.23s | 0 | 10 |
+| `lazy_greedy_ff` | 14 / 23 | 156.70s | 0 | 9 |
+| `lazy_greedy_hmax` | 14 / 23 | 77.53s | 0 | 9 |
 
 ## Small problems
 
@@ -59,6 +59,6 @@ Generated from `problem_outputs/`. T = translation wall-clock time, S = Fast Dow
 | **hard_02** | :red_circle: [Search failed](problem_outputs/astar_add/hard_02_log.txt)<br>time limit<br>T 72.86s | :red_circle: [Search failed](problem_outputs/astar_blind/hard_02_log.txt)<br>time limit<br>T 72.23s | :red_circle: [Search failed](problem_outputs/astar_ff/hard_02_log.txt)<br>time limit<br>T 40.49s | :red_circle: [Search failed](problem_outputs/astar_hmax/hard_02_log.txt)<br>time limit<br>T 70.97s | :red_circle: [Search failed](problem_outputs/eager_greedy_add/hard_02_log.txt)<br>time limit<br>T 70.56s | :red_circle: [Search failed](problem_outputs/eager_greedy_blind/hard_02_log.txt)<br>time limit<br>T 40.89s | :red_circle: [Search failed](problem_outputs/eager_greedy_ff/hard_02_log.txt)<br>time limit<br>T 71.64s | :red_circle: [Search failed](problem_outputs/eager_greedy_hmax/hard_02_log.txt)<br>time limit<br>T 40.14s | :red_circle: [Search failed](problem_outputs/lazy_greedy_add/hard_02_log.txt)<br>time limit<br>T 45.39s | :red_circle: [Search failed](problem_outputs/lazy_greedy_blind/hard_02_log.txt)<br>time limit<br>T 40.20s | :red_circle: [Search failed](problem_outputs/lazy_greedy_ff/hard_02_log.txt)<br>time limit<br>T 41.41s | :red_circle: [Search failed](problem_outputs/lazy_greedy_hmax/hard_02_log.txt)<br>time limit<br>T 41.27s |
 | **hard_03** | :green_circle: [Solved](problem_outputs/astar_add/hard_03_plan)<br>T 42.12s<br>S 443.46s<br>L 52 | :red_circle: [Search failed](problem_outputs/astar_blind/hard_03_log.txt)<br>time limit<br>T 42.78s | :red_circle: [Search failed](problem_outputs/astar_ff/hard_03_log.txt)<br>time limit<br>T 24.08s | :red_circle: [Search failed](problem_outputs/astar_hmax/hard_03_log.txt)<br>time limit<br>T 42.54s | :red_circle: [Search failed](problem_outputs/eager_greedy_add/hard_03_log.txt)<br>time limit<br>T 42.24s | :red_circle: [Search failed](problem_outputs/eager_greedy_blind/hard_03_log.txt)<br>time limit<br>T 24.14s | :red_circle: [Search failed](problem_outputs/eager_greedy_ff/hard_03_log.txt)<br>time limit<br>T 40.18s | :green_circle: [Solved](problem_outputs/eager_greedy_hmax/hard_03_plan)<br>T 24.05s<br>S 85.16s<br>L 71 | :red_circle: [Search failed](problem_outputs/lazy_greedy_add/hard_03_log.txt)<br>time limit<br>T 27.46s | :red_circle: [Search failed](problem_outputs/lazy_greedy_blind/hard_03_log.txt)<br>time limit<br>T 24.04s | :red_circle: [Search failed](problem_outputs/lazy_greedy_ff/hard_03_log.txt)<br>time limit<br>T 24.82s | :green_circle: [Solved](problem_outputs/lazy_greedy_hmax/hard_03_plan)<br>T 23.99s<br>S 109.04s<br>L 75 |
 
-Times unavailable in a log are shown as `-`. The current log outcome takes precedence over leftover plan files from earlier runs.
+Times unavailable in a log are shown as `-`. Mean search time only includes successful runs.
 
 For filtering and a detailed run table, open `planner_results.html` locally.
